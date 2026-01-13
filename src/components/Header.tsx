@@ -5,7 +5,9 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const navLinks = [
+  { href: "/", label: "Home" },
   { href: "/tours-and-prices", label: "Tours And Prices" },
+  { href: "/#what-is-we-do", label: "What Is We Do?" },
   { href: "/faqs", label: "FAQs" },
   { href: "/contact", label: "Contact Us" },
 ];
@@ -28,34 +30,34 @@ export default function Header() {
         isScrolled ? "bg-white shadow-lg" : "bg-white/95"
       }`}
     >
-      <div className="container-custom">
-        <nav className="flex items-center justify-between py-4">
+      <div className="max-w-6xl mx-auto px-4">
+        <nav className="flex items-center justify-between py-3">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/cropped-LLL_Logo_1.png"
               alt="Life Like Locals"
-              width={80}
-              height={80}
-              className="h-16 w-auto"
+              width={60}
+              height={60}
+              className="h-12 w-auto"
               unoptimized
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[#666] hover:text-[#2ea3f2] transition-colors font-medium text-[15px] uppercase tracking-wide"
+                className="text-[#666] hover:text-coral transition-colors font-medium text-sm"
               >
                 {link.label}
               </Link>
             ))}
             <Link
-              href="/tours-and-prices"
-              className="btn-primary"
+              href="/contact"
+              className="bg-coral text-white px-5 py-2.5 rounded text-sm font-semibold uppercase tracking-wide hover:bg-[#e05a4a] transition-colors"
             >
               Book Now
             </Link>
@@ -103,15 +105,15 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block py-3 text-[#666] hover:text-[#2ea3f2] transition-colors font-medium uppercase tracking-wide text-[15px]"
+                className="block py-3 text-[#666] hover:text-coral transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
             <Link
-              href="/tours-and-prices"
-              className="btn-primary inline-block mt-4"
+              href="/contact"
+              className="inline-block mt-4 bg-coral text-white px-5 py-2.5 rounded text-sm font-semibold uppercase tracking-wide"
               onClick={() => setIsMenuOpen(false)}
             >
               Book Now
