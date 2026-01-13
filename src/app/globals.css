@@ -3,21 +3,30 @@
 
 @import "tailwindcss";
 
-/* ========== COLOR PALETTE - RICH & ALIVE ========== */
+/* ========== PREMIUM COLOR PALETTE ========== */
 :root {
   /* Primary coral - WITH GRADIENT */
   --coral: #F97068;
   --coral-light: #FFB4AC;
   --coral-hover: #E85F57;
+  --coral-dark: #E85A52;
   --coral-soft: rgba(249, 112, 104, 0.1);
   --coral-gradient: linear-gradient(135deg, #F97068 0%, #FF8A7A 50%, #F97068 100%);
 
-  /* TEAL ACCENT - WITH DEPTH */
+  /* TEAL / OCEAN - WITH DEPTH */
   --teal: #40E0D0;
   --teal-light: #5CE1D6;
   --teal-dark: #2EC4B6;
   --teal-soft: rgba(64, 224, 208, 0.15);
   --teal-gradient: linear-gradient(180deg, #5CE1D6 0%, #3DD1C5 50%, #2EC4B6 100%);
+  --turquoise: #00CED1;
+  --deep-ocean: #006994;
+  --shallow-water: #88D3CE;
+
+  /* SUNSET & WARMTH */
+  --sunset-orange: #FF7F50;
+  --golden-hour: #FFD700;
+  --sunset-gradient: linear-gradient(180deg, #FF7F50 0%, #F97068 30%, #E85A52 60%, #006994 100%);
 
   /* Warm neutrals (NOT cold grays) */
   --warm-white: #FFFAF5;
@@ -25,6 +34,7 @@
   --sand: #F5DEB3;
   --sand-light: #FFF8DC;
   --warm-gray: #8B7355;
+  --driftwood: #8B7355;
   --text-warm: #5D4E37;
   --text-dark: #3D2E1F;
   --text-light: #7A6B5A;
@@ -40,6 +50,131 @@
     0 40px 80px rgba(0,0,0,0.15);
   --shadow-coral: 0 8px 30px rgba(249, 112, 104, 0.4);
   --shadow-teal: 0 8px 30px rgba(64, 224, 208, 0.4);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== ANIMATED GRADIENT HERO ========== */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    -45deg,
+    #F97068,
+    #FF9A8B,
+    #88D3CE,
+    #6EC6CA,
+    #F97068
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+/* ========== FLOATING BUBBLES ========== */
+.bubbles-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.4);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  left: var(--left);
+  width: var(--size);
+  height: var(--size);
+  background: var(--color, rgba(255, 255, 255, 0.3));
+  border-radius: 50%;
+  animation: rise var(--duration) ease-in infinite;
+  animation-delay: var(--delay);
+}
+
+/* ========== GLASSMORPHISM ========== */
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  box-shadow: var(--shadow-glass);
+}
+
+.glass-card-dark {
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+}
+
+/* ========== 3D TILT HOVER ========== */
+.tilt-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+}
+
+.tilt-3d:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(-5deg) scale(1.02);
+}
+
+/* ========== COLOR SHIFT ON HOVER ========== */
+.color-shift {
+  position: relative;
+  overflow: hidden;
+}
+
+.color-shift::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(64, 224, 208, 0) 0%,
+    rgba(64, 224, 208, 0.35) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: inherit;
+}
+
+.color-shift:hover::after {
+  opacity: 1;
+}
+
+/* ========== SHIMMER EFFECT ========== */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
 }
 
 * {
