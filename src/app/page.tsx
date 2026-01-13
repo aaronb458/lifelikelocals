@@ -7,25 +7,25 @@ export default function Home() {
     <>
       {/* ========== SECTION 1: Hero Banner - AERIAL BEACH ========== */}
       <section
-        className="relative min-h-[75vh] flex items-center justify-center pt-[65px]"
+        className="relative min-h-[80vh] flex items-center justify-center pt-[65px]"
         style={{
           backgroundImage: `url('/images/Banner.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          borderRadius: '0 0 40px 40px',
+          borderRadius: '0 0 50px 50px',
         }}
       >
-        <div className="absolute inset-0 bg-black/30" style={{ borderRadius: '0 0 40px 40px' }} />
+        <div className="absolute inset-0 bg-black/35" style={{ borderRadius: '0 0 50px 50px' }} />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="hero-title mb-6">
             Experience &quot;Life Like Locals&quot;<br />
             in the Bahamas
           </h1>
-          <p className="text-white text-lg max-w-2xl mx-auto mb-8" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
+          <p className="text-white text-xl max-w-2xl mx-auto mb-10 font-medium" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.6)' }}>
             Life Like Locals is an innovative, down-home Bahamian experience that
             inspires and evokes the real &quot;Bahamian connection&quot;.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <Link href="/tours-and-prices" className="btn-primary">
               Learn More
             </Link>
@@ -36,115 +36,115 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== SECTION 2: Introduction - ASYMMETRIC with BIGGER decorations ========== */}
-      <section className="py-24 px-4 bg-[#FFFAF5] relative overflow-hidden">
+      {/* ========== SECTION 2: Introduction - ASYMMETRIC with HUGE decorations ========== */}
+      <section className="py-28 px-4 bg-[#FFFAF5] relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left Column - Text */}
             <div className="lg:pr-8">
-              <p className="text-[#4A3728] text-base leading-relaxed mb-5">
+              <p className="text-[#5D4E37] text-lg leading-relaxed mb-6">
                 Life Like Locals is the curation of an indigenous collection of original and
                 unique events that induct you into the &quot;real world of the locals&quot;,
                 introducing our way of life, from the food, to the dances, to the heart and
                 spirit of The Bahamas. Our goal is to give you an experience that you will
                 never forget. &quot;This ain&apos;t no lie, you ain&apos;t go neva meet people like us, fa tru!&quot;
               </p>
-              <p className="text-[#4A3728] text-base leading-relaxed mb-5">
+              <p className="text-[#5D4E37] text-lg leading-relaxed mb-6">
                 We invite you to feel our vibrant character, learn our accent, embrace our
                 lingo, share in the flavor of our food, and experience the unity of
                 traditional and contemporary, and most importantly, become a part of it!
                 Don&apos;t be a &quot;typical tourist&quot;, live a little and enjoy life.
               </p>
-              <p className="text-[#4A3728] text-base font-semibold">
+              <p className="text-[#5D4E37] text-lg font-bold">
                 What are you waiting for?
               </p>
             </div>
 
-            {/* Right Column - BIGGER decorative elements (150-200px) */}
-            <div className="relative min-h-[500px] hidden lg:block">
-              {/* Woman's EYES - prominent */}
-              <div className="absolute top-0 right-0 w-[340px] h-[150px] overflow-hidden rounded-2xl shadow-xl">
+            {/* Right Column - HUGE decorative elements */}
+            <div className="relative min-h-[550px] hidden lg:block">
+              {/* Woman's EYES - prominent, overlapping */}
+              <div className="absolute top-0 right-0 w-[380px] h-[170px] overflow-hidden rounded-3xl shadow-2xl">
                 <Image
                   src="/images/why-choose-us.png"
                   alt="Bahamian woman eyes"
                   width={1440}
                   height={615}
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: 'center 30%', borderRadius: '16px' }}
+                  style={{ objectPosition: 'center 30%', borderRadius: '24px' }}
                 />
               </div>
 
-              {/* Hat - TOP RIGHT - BIG (200px) */}
+              {/* Hat - TOP RIGHT - HUGE (220px) */}
               <div
-                className="absolute top-[20px] right-[-30px] w-[180px] float"
-                style={{ '--rotation': '-10deg' } as React.CSSProperties}
+                className="absolute top-[10px] right-[-50px] w-[220px] float decoration"
+                style={{ '--rotation': '-12deg' } as React.CSSProperties}
               >
                 <Image
                   src="/images/hat1.png"
                   alt="Bahamian hat"
                   width={297}
                   height={710}
-                  className="w-full h-auto drop-shadow-xl"
+                  className="w-full h-auto"
                   style={{ borderRadius: '0' }}
                 />
               </div>
 
-              {/* Watermelon - BOTTOM RIGHT - BIG (180px) */}
+              {/* Watermelon - BOTTOM RIGHT - HUGE (220px) */}
               <div
-                className="absolute bottom-0 right-[20px] w-[150px] float float-delay-1"
-                style={{ '--rotation': '8deg' } as React.CSSProperties}
+                className="absolute bottom-[-20px] right-[10px] w-[220px] float float-delay-1 decoration"
+                style={{ '--rotation': '10deg' } as React.CSSProperties}
               >
                 <Image
                   src="/images/Watermelon.png"
                   alt="Watermelon slice"
                   width={168}
                   height={391}
-                  className="w-full h-auto drop-shadow-xl"
+                  className="w-full h-auto"
                   style={{ borderRadius: '0' }}
                 />
               </div>
 
-              {/* Starfish - BOTTOM LEFT - BIG (150px) */}
+              {/* Starfish - BOTTOM LEFT - BIG (160px) */}
               <div
-                className="absolute bottom-[60px] left-0 w-[150px] float float-delay-2"
-                style={{ '--rotation': '-12deg' } as React.CSSProperties}
+                className="absolute bottom-[40px] left-[-30px] w-[160px] float float-delay-2 decoration"
+                style={{ '--rotation': '-15deg' } as React.CSSProperties}
               >
                 <Image
                   src="/images/Starfish.png"
                   alt="Starfish"
                   width={277}
                   height={475}
-                  className="w-full h-auto drop-shadow-xl"
+                  className="w-full h-auto"
                   style={{ borderRadius: '0' }}
                 />
               </div>
 
-              {/* Orange slice - TOP LEFT - BIG (150px) */}
+              {/* Orange slice - TOP LEFT - BIG (160px) */}
               <div
-                className="absolute top-[180px] left-[20px] w-[130px] float"
-                style={{ '--rotation': '5deg' } as React.CSSProperties}
+                className="absolute top-[200px] left-[0px] w-[160px] float float-delay-3 decoration"
+                style={{ '--rotation': '8deg' } as React.CSSProperties}
               >
                 <Image
                   src="/images/orange-slice.png"
                   alt="Orange slice"
                   width={364}
                   height={447}
-                  className="w-full h-auto drop-shadow-xl"
+                  className="w-full h-auto"
                   style={{ borderRadius: '0' }}
                 />
               </div>
 
-              {/* Purple Drink - MIDDLE - BIG (120px) */}
+              {/* Purple Drink - MIDDLE - BIG (130px) */}
               <div
-                className="absolute top-[280px] left-[140px] w-[100px] float float-delay-1"
-                style={{ '--rotation': '3deg' } as React.CSSProperties}
+                className="absolute top-[320px] left-[160px] w-[130px] float float-delay-4 decoration"
+                style={{ '--rotation': '5deg' } as React.CSSProperties}
               >
                 <Image
                   src="/images/Purple-drink-1.png"
                   alt="Purple drink"
                   width={251}
                   height={521}
-                  className="w-full h-auto drop-shadow-xl"
+                  className="w-full h-auto"
                   style={{ borderRadius: '0' }}
                 />
               </div>
@@ -156,16 +156,16 @@ export default function Home() {
       {/* Wave transition to coral */}
       <WaveDivider color="#F97068" />
 
-      {/* ========== SECTION 3: Coral CTA Banner ========== */}
-      <section className="bg-[#F97068] py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="section-title-white text-3xl mb-3">
+      {/* ========== SECTION 3: Coral CTA Banner - WITH GRADIENT ========== */}
+      <section className="coral-section py-24 px-4">
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <h2 className="section-title-white mb-4">
             Explore Our Top Experiences
           </h2>
-          <p className="subtitle-script-white mb-10">
+          <p className="subtitle-script-white mb-12">
             &quot;Unique Experiences Unlocked&quot;
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <Link href="/tours-and-prices" className="btn-outline-white">
               See Tours
             </Link>
@@ -179,46 +179,42 @@ export default function Home() {
       {/* Wave transition from coral */}
       <WaveDivider color="#FFFAF5" flip />
 
-      {/* ========== SECTION 4: Full-Bleed Underwater Photo ========== */}
+      {/* ========== SECTION 4: Full-Bleed Underwater Photo - OVERLAPS INTO NEXT SECTION ========== */}
       <section
-        className="h-[50vh] md:h-[60vh] w-full my-8"
+        className="h-[55vh] md:h-[65vh] w-full overlap-bottom"
         style={{
           backgroundImage: `url('/images/Banner-2-2.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          borderRadius: '24px',
-          maxWidth: '95%',
+          borderRadius: '30px',
+          maxWidth: '92%',
           marginLeft: 'auto',
           marginRight: 'auto',
-          boxShadow: '0 8px 30px rgba(139, 115, 85, 0.2)',
+          boxShadow: '0 20px 60px rgba(0,0,0,0.25), 0 40px 100px rgba(64, 224, 208, 0.15)',
         }}
       />
 
-      {/* ========== SECTION 5: Why Choose Us - WITH TEAL BLOB ========== */}
-      <section className="py-24 px-4 bg-[#FFFAF5] relative overflow-hidden" id="what-is-we-do">
-        {/* THE GIANT TEAL BLOB - positioned right */}
+      {/* ========== SECTION 5: Why Choose Us - WITH MORPHING TEAL BLOB ========== */}
+      <section className="py-32 px-4 bg-[#FFFAF5] relative overflow-hidden" id="what-is-we-do">
+        {/* THE MORPHING TEAL BLOB - uses CSS animation */}
         <div
-          className="absolute hidden lg:block"
+          className="teal-blob hidden lg:block"
           style={{
-            width: '50%',
-            height: '140%',
-            right: '-5%',
-            top: '-20%',
-            background: '#40E0D0',
-            borderRadius: '40% 60% 70% 30% / 40% 50% 60% 50%',
-            zIndex: 0,
-            opacity: 0.85,
+            width: '55%',
+            height: '150%',
+            right: '-8%',
+            top: '-25%',
           }}
         />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left - Text (ASYMMETRIC - text is LEFT aligned) */}
-            <div>
-              <h2 className="section-title text-3xl mb-3">Why Choose Us?</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left - Text */}
+            <div className="pt-16">
+              <h2 className="section-title mb-4">Why Choose Us?</h2>
               <p className="subtitle-script">&quot;Why go wit us?&quot;</p>
 
-              <div className="text-[#4A3728] leading-relaxed space-y-5">
+              <div className="text-[#5D4E37] leading-relaxed space-y-6 text-lg">
                 <p>
                   When you book with us, you make a big commitment and we take
                   that very seriously. Our mission is to connect people and cultures.
@@ -237,22 +233,40 @@ export default function Home() {
                   is different, and you will meet many characteristics. Get ready to
                   laugh. Get ready to learn. And most of all get ready to be inspired.
                 </p>
-                <p className="font-semibold italic text-lg">
+                <p className="font-bold italic text-xl text-[#F97068]">
                   &quot;Yeah ya&apos;ll ga miss us!&quot;
                 </p>
               </div>
             </div>
 
-            {/* Right - Decorative space inside the teal blob */}
-            <div className="relative min-h-[300px] hidden lg:flex items-center justify-center">
-              {/* Blue starfish inside the teal blob */}
-              <div className="absolute top-[20%] right-[20%] w-[120px] float">
+            {/* Right - Decorative elements inside the teal blob */}
+            <div className="relative min-h-[400px] hidden lg:flex items-center justify-center">
+              {/* Blue starfish - HUGE and floating */}
+              <div
+                className="absolute top-[15%] right-[15%] w-[180px] float decoration"
+                style={{ '--rotation': '-8deg' } as React.CSSProperties}
+              >
                 <Image
                   src="/images/image-10.png"
                   alt="Blue starfish"
                   width={277}
                   height={382}
-                  className="w-full h-auto drop-shadow-xl"
+                  className="w-full h-auto"
+                  style={{ borderRadius: '0' }}
+                />
+              </div>
+
+              {/* Orange slice floating in blob */}
+              <div
+                className="absolute bottom-[25%] right-[35%] w-[120px] float float-delay-2 decoration"
+                style={{ '--rotation': '15deg' } as React.CSSProperties}
+              >
+                <Image
+                  src="/images/orange-slice.png"
+                  alt="Orange slice"
+                  width={364}
+                  height={447}
+                  className="w-full h-auto"
                   style={{ borderRadius: '0' }}
                 />
               </div>
@@ -261,15 +275,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== SECTION 6: What To Expect - ROUNDED SQUARES (not circles!) ========== */}
-      <section className="py-24 px-4 bg-[#FFF8DC]">
+      {/* ========== SECTION 6: What To Expect - IMPERFECT GRID ========== */}
+      <section className="py-28 px-4 bg-[#FFF8DC]">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-14">
-            <h2 className="section-title text-3xl mb-3">What To Expect</h2>
+          <div className="text-center mb-16">
+            <h2 className="section-title mb-4">What To Expect</h2>
             <p className="subtitle-script">&quot;Unique Experiences Unlocked&quot;</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 justify-items-center">
             {[
               { label: "Creative Tourism", img: "/images/What-to-expect-1.png" },
               { label: "Local Gastronomy", img: "/images/What-to-expect-2.png" },
@@ -281,7 +295,7 @@ export default function Home() {
               { label: "Real real Bahamian life", img: "/images/What-to-expect-8.png" },
             ].map((item, idx) => (
               <div key={idx} className="flex flex-col items-center">
-                {/* ROUNDED SQUARE with text overlay */}
+                {/* ROUNDED SQUARE with varied transforms via CSS nth-child */}
                 <div className="expect-square">
                   <Image
                     src={item.img}
@@ -299,29 +313,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== SECTION 7: What's Included - TILTED IMAGES ========== */}
-      <section className="py-24 px-4 bg-[#FFFAF5]">
+      {/* ========== SECTION 7: What's Included - DRAMATICALLY TILTED ========== */}
+      <section className="py-28 px-4 bg-[#FFFAF5]">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-14">
-            <h2 className="section-title text-3xl mb-3">What&apos;s Included</h2>
+          <div className="text-center mb-16">
+            <h2 className="section-title mb-4">What&apos;s Included</h2>
             <p className="subtitle-script">&quot;What yinna getting&quot;</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Card 1 - TILTED LEFT */}
             <div className="text-center">
-              <div className="image-zoom w-full h-56 mb-6 shadow-xl tilt-left" style={{ borderRadius: '20px' }}>
+              <div className="image-zoom w-full h-64 mb-8 tilt-left" style={{ borderRadius: '24px', boxShadow: '0 15px 50px rgba(0,0,0,0.15)' }}>
                 <Image
                   src="/images/Whats-included-1-1-1.png"
                   alt="Food and Drink Tastings"
                   width={345}
                   height={285}
                   className="w-full h-full object-cover"
-                  style={{ borderRadius: '20px' }}
+                  style={{ borderRadius: '24px' }}
                 />
               </div>
-              <h4 className="item-title text-lg mb-3">Food and Drink Tastings</h4>
-              <p className="text-[#7A6B5A] text-sm leading-relaxed">
+              <h4 className="item-title mb-4">Food and Drink Tastings</h4>
+              <p className="text-[#7A6B5A] text-base leading-relaxed">
                 Let your taste buds dive into home-made Bahamian dishes that will
                 &quot;have ya belly full&quot;! You will definitely remember this tour and
                 the variety of flavours for sure.
@@ -330,43 +344,43 @@ export default function Home() {
 
             {/* Card 2 - TILTED RIGHT */}
             <div className="text-center">
-              <div className="image-zoom w-full h-56 mb-6 shadow-xl tilt-right" style={{ borderRadius: '20px' }}>
+              <div className="image-zoom w-full h-64 mb-8 tilt-right" style={{ borderRadius: '24px', boxShadow: '0 15px 50px rgba(0,0,0,0.15)' }}>
                 <Image
                   src="/images/Whats-included-2.png"
                   alt="In-house Tours"
                   width={345}
                   height={285}
                   className="w-full h-full object-cover"
-                  style={{ borderRadius: '20px' }}
+                  style={{ borderRadius: '24px' }}
                 />
               </div>
-              <h4 className="item-title text-lg mb-3">In-house Tours</h4>
-              <p className="text-[#7A6B5A] text-sm leading-relaxed">
+              <h4 className="item-title mb-4">In-house Tours</h4>
+              <p className="text-[#7A6B5A] text-base leading-relaxed">
                 Become infused with the local vibe as you blend into Bahamian lifestyle.
                 Hear our stories and make some island friends. Feast your eyes, ears,
                 and stomachs on all that is &quot;truly Bahamian&quot;.
               </p>
             </div>
 
-            {/* Card 3 - TILTED SLIGHT */}
+            {/* Card 3 - SLIGHT TILT */}
             <div className="text-center">
-              <div className="image-zoom w-full h-56 mb-6 shadow-xl tilt-slight" style={{ borderRadius: '20px' }}>
+              <div className="image-zoom w-full h-64 mb-8 tilt-slight" style={{ borderRadius: '24px', boxShadow: '0 15px 50px rgba(0,0,0,0.15)' }}>
                 <Image
                   src="/images/Whats-included-3.png"
                   alt="Endless Add-Ons"
                   width={345}
                   height={285}
                   className="w-full h-full object-cover"
-                  style={{ borderRadius: '20px' }}
+                  style={{ borderRadius: '24px' }}
                 />
               </div>
-              <h4 className="item-title text-lg mb-3">Endless Add-Ons</h4>
-              <p className="text-[#7A6B5A] text-sm leading-relaxed mb-3">
+              <h4 className="item-title mb-4">Endless Add-Ons</h4>
+              <p className="text-[#7A6B5A] text-base leading-relaxed mb-4">
                 For those of you that need that extra, we have a slew of add-on tours
                 that add to the adventure. We can customize your tour, your stops and
                 of course, we can arrange private tours.
               </p>
-              <Link href="/tours-and-prices" className="text-[#40E0D0] hover:text-[#F97068] text-sm font-semibold transition-colors">
+              <Link href="/tours-and-prices" className="text-[#40E0D0] hover:text-[#F97068] text-base font-bold transition-colors">
                 View Add-ons →
               </Link>
             </div>
@@ -377,11 +391,11 @@ export default function Home() {
       {/* Wave transition to coral */}
       <WaveDivider color="#F97068" />
 
-      {/* ========== SECTION 8: Final CTA ========== */}
-      <section className="bg-[#F97068] py-20 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="section-title-white text-3xl mb-8">Ready to Plan a Trip?</h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      {/* ========== SECTION 8: Final CTA - WITH GRADIENT ========== */}
+      <section className="coral-section py-24 px-4">
+        <div className="max-w-3xl mx-auto text-center relative z-10">
+          <h2 className="section-title-white mb-10">Ready to Plan a Trip?</h2>
+          <div className="flex flex-col sm:flex-row gap-5 justify-center">
             <Link href="/tours-and-prices" className="btn-outline-white">
               Learn More
             </Link>
