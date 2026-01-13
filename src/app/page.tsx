@@ -13,10 +13,7 @@ export default function Home() {
           backgroundPosition: 'center',
         }}
       >
-        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/30" />
-
-        {/* Content - Center aligned */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="hero-title mb-6">
             Experience &quot;Life Like Locals&quot;<br />
@@ -37,7 +34,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== SECTION 2: Introduction Content (White Background) ========== */}
+      {/* ========== SECTION 2: Introduction Content ========== */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
@@ -61,30 +58,26 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Right Column - Woman's eyes + decorative elements (40%) */}
+            {/* Right Column - Woman's EYES + decorative elements */}
             <div className="lg:col-span-2 relative min-h-[450px] hidden lg:block">
-              {/* Woman's EYES/face cropped photo - intimate, inviting */}
-              <div className="absolute top-8 right-0 w-[320px] h-[200px] overflow-hidden rounded-xl shadow-lg">
+              {/* Woman's EYES - cropped to show just eyes/upper face */}
+              <div className="absolute top-8 right-0 w-[320px] h-[180px] overflow-hidden rounded-xl shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80"
-                  alt="Bahamian woman"
+                  src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80"
+                  alt="Bahamian woman eyes"
                   fill
-                  className="object-cover object-[center_15%]"
-                  style={{ objectPosition: 'center 25%' }}
+                  className="object-cover"
+                  style={{ objectPosition: 'center 22%' }}
                   unoptimized
                 />
               </div>
 
-              {/* LARGE Watermelon slice - bottom right, prominent */}
-              <div className="absolute bottom-0 right-0 w-[140px] h-[140px]">
+              {/* LARGE Watermelon slice - bottom right */}
+              <div className="absolute bottom-0 right-0 w-[150px] h-[150px]">
                 <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-lg">
-                  {/* Rind */}
                   <path d="M5 85 Q50 -10 95 85 Z" fill="#2d5a27"/>
-                  {/* White part */}
                   <path d="M10 80 Q50 0 90 80 Z" fill="#e8f5e9"/>
-                  {/* Red flesh */}
                   <path d="M15 75 Q50 10 85 75 Z" fill="#ef5350"/>
-                  {/* Seeds */}
                   <ellipse cx="35" cy="50" rx="4" ry="6" fill="#333" transform="rotate(-20 35 50)"/>
                   <ellipse cx="50" cy="45" rx="4" ry="6" fill="#333" transform="rotate(5 50 45)"/>
                   <ellipse cx="65" cy="50" rx="4" ry="6" fill="#333" transform="rotate(20 65 50)"/>
@@ -93,53 +86,43 @@ export default function Home() {
                 </svg>
               </div>
 
-              {/* LARGE Starfish - left side, prominent */}
-              <div className="absolute bottom-16 -left-4 w-[120px] h-[120px]">
+              {/* LARGE Starfish - left side */}
+              <div className="absolute bottom-20 -left-4 w-[130px] h-[130px]">
                 <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-lg">
-                  <polygon
-                    points="50,5 61,35 95,35 68,57 79,90 50,70 21,90 32,57 5,35 39,35"
-                    fill="#F97068"
-                  />
-                  {/* Texture dots */}
+                  <polygon points="50,5 61,35 95,35 68,57 79,90 50,70 21,90 32,57 5,35 39,35" fill="#F97068"/>
                   <circle cx="50" cy="45" r="3" fill="#E85F57"/>
                   <circle cx="40" cy="50" r="2" fill="#E85F57"/>
                   <circle cx="60" cy="50" r="2" fill="#E85F57"/>
-                  <circle cx="45" cy="58" r="2" fill="#E85F57"/>
-                  <circle cx="55" cy="58" r="2" fill="#E85F57"/>
                 </svg>
               </div>
 
-              {/* Orange/citrus slice - top left of photo */}
-              <div className="absolute top-0 left-8 w-[100px] h-[100px]">
+              {/* Orange slice - top left */}
+              <div className="absolute top-0 left-4 w-[110px] h-[110px]">
                 <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-md">
-                  {/* Orange rind */}
                   <circle cx="50" cy="50" r="45" fill="#ff9800"/>
-                  {/* Inner orange */}
                   <circle cx="50" cy="50" r="38" fill="#ffb74d"/>
-                  {/* Segments */}
                   <path d="M50 12 L50 88" stroke="#ff9800" strokeWidth="2"/>
                   <path d="M12 50 L88 50" stroke="#ff9800" strokeWidth="2"/>
                   <path d="M22 22 L78 78" stroke="#ff9800" strokeWidth="2"/>
                   <path d="M78 22 L22 78" stroke="#ff9800" strokeWidth="2"/>
-                  {/* Center */}
                   <circle cx="50" cy="50" r="8" fill="#fff3e0"/>
                 </svg>
               </div>
 
-              {/* Tropical leaf - behind photo */}
-              <div className="absolute top-[-20px] right-[-30px] w-[100px] h-[160px] -z-10 rotate-[30deg]">
+              {/* Tropical leaf - behind */}
+              <div className="absolute top-[-10px] right-[-20px] w-[90px] h-[140px] -z-10 rotate-[25deg]">
                 <svg viewBox="0 0 60 100" className="w-full h-full">
-                  <path d="M30 0 Q60 30 50 50 Q60 70 30 100 Q0 70 10 50 Q0 30 30 0" fill="#4caf50" opacity="0.7"/>
+                  <path d="M30 0 Q60 30 50 50 Q60 70 30 100 Q0 70 10 50 Q0 30 30 0" fill="#4caf50" opacity="0.8"/>
                   <path d="M30 10 L30 90" stroke="#388e3c" strokeWidth="2" opacity="0.5"/>
                 </svg>
               </div>
 
-              {/* Small lime/fruit - scattered */}
-              <div className="absolute top-[220px] right-[280px] w-[60px] h-[60px]">
+              {/* Small lime */}
+              <div className="absolute top-[200px] left-[60px] w-[70px] h-[70px]">
                 <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-md">
-                  <circle cx="50" cy="50" r="40" fill="#8bc34a"/>
-                  <circle cx="50" cy="50" r="30" fill="#aed581"/>
-                  <circle cx="50" cy="50" r="5" fill="#689f38"/>
+                  <circle cx="50" cy="50" r="42" fill="#8bc34a"/>
+                  <circle cx="50" cy="50" r="32" fill="#aed581"/>
+                  <circle cx="50" cy="50" r="6" fill="#689f38"/>
                 </svg>
               </div>
             </div>
@@ -150,10 +133,10 @@ export default function Home() {
       {/* ========== SECTION 3: Coral CTA Banner ========== */}
       <section className="bg-[#F97068] py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="section-title text-white mb-2">
+          <h2 className="section-title-white text-3xl mb-2">
             Explore Our Top Experiences
           </h2>
-          <p className="text-white/90 italic text-lg mb-8">
+          <p className="subtitle-script-white mb-8">
             &quot;Unique Experiences Unlocked&quot;
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -180,8 +163,8 @@ export default function Home() {
       {/* ========== SECTION 5: Why Choose Us (TEXT ONLY) ========== */}
       <section className="py-20 px-4 bg-white" id="what-is-we-do">
         <div className="max-w-3xl mx-auto">
-          <h2 className="section-title text-[#333] mb-2 text-center">Why Choose Us?</h2>
-          <p className="text-[#F97068] italic text-lg mb-8 text-center">&quot;Why go wit us?&quot;</p>
+          <h2 className="section-title text-3xl mb-2 text-center">Why Choose Us?</h2>
+          <p className="subtitle-script text-center mb-10">&quot;Why go wit us?&quot;</p>
 
           <div className="text-[#333] leading-relaxed space-y-5">
             <p>
@@ -209,12 +192,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== SECTION 6: What To Expect (8 circular photos, 4x2 grid) ========== */}
+      {/* ========== SECTION 6: What To Expect (8 circular photos with TEXT ON TOP) ========== */}
       <section className="py-20 px-4 bg-[#f9f9f9]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="section-title text-[#F97068] mb-2">What To Expect</h2>
-            <p className="text-[#666] italic">&quot;Unique Experiences Unlocked&quot;</p>
+            <h2 className="section-title text-3xl mb-2">What To Expect</h2>
+            <p className="subtitle-script">&quot;Unique Experiences Unlocked&quot;</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
@@ -229,17 +212,18 @@ export default function Home() {
               { label: "Real real Bahamian life", img: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=300&q=80" },
             ].map((item, idx) => (
               <div key={idx} className="flex flex-col items-center">
-                <div className="relative w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden mb-3 shadow-lg">
+                {/* Circular image with text overlay ON TOP */}
+                <div className="expect-item w-28 h-28 md:w-36 md:h-36 shadow-lg">
                   <Image
                     src={item.img}
                     alt={item.label}
                     fill
-                    className="object-cover"
+                    className="expect-item-image rounded-full"
                     unoptimized
                   />
-                  <div className="absolute inset-0 bg-black/30" />
+                  <div className="expect-item-overlay" />
+                  <span className="expect-item-label">{item.label}</span>
                 </div>
-                <span className="text-[#333] text-sm text-center font-medium">{item.label}</span>
               </div>
             ))}
           </div>
@@ -250,12 +234,11 @@ export default function Home() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="section-title text-[#F97068] mb-2">What&apos;s Included</h2>
-            <p className="text-[#666] italic">&quot;What yinna getting&quot;</p>
+            <h2 className="section-title text-3xl mb-2">What&apos;s Included</h2>
+            <p className="subtitle-script">&quot;What yinna getting&quot;</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {/* Food and Drink Tastings */}
             <div className="text-center">
               <div className="w-full h-48 rounded-lg overflow-hidden mb-5 shadow-md">
                 <Image
@@ -267,7 +250,7 @@ export default function Home() {
                   unoptimized
                 />
               </div>
-              <h4 className="text-[#333] text-lg font-bold mb-3">Food and Drink Tastings</h4>
+              <h4 className="item-title text-lg mb-3">Food and Drink Tastings</h4>
               <p className="text-[#666] text-sm leading-relaxed">
                 Let your taste buds dive into home-made Bahamian dishes that will
                 &quot;have ya belly full&quot;! You will definitely remember this tour and
@@ -275,7 +258,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* In-house Tours */}
             <div className="text-center">
               <div className="w-full h-48 rounded-lg overflow-hidden mb-5 shadow-md">
                 <Image
@@ -287,7 +269,7 @@ export default function Home() {
                   unoptimized
                 />
               </div>
-              <h4 className="text-[#333] text-lg font-bold mb-3">In-house Tours</h4>
+              <h4 className="item-title text-lg mb-3">In-house Tours</h4>
               <p className="text-[#666] text-sm leading-relaxed">
                 Become infused with the local vibe as you blend into Bahamian lifestyle.
                 Hear our stories and make some island friends. Feast your eyes, ears,
@@ -295,7 +277,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Endless Add-Ons */}
             <div className="text-center">
               <div className="w-full h-48 rounded-lg overflow-hidden mb-5 shadow-md">
                 <Image
@@ -307,7 +288,7 @@ export default function Home() {
                   unoptimized
                 />
               </div>
-              <h4 className="text-[#333] text-lg font-bold mb-3">Endless Add-Ons</h4>
+              <h4 className="item-title text-lg mb-3">Endless Add-Ons</h4>
               <p className="text-[#666] text-sm leading-relaxed mb-2">
                 For those of you that need that extra, we have a slew of add-on tours
                 that add to the adventure. We can customize your tour, your stops and
@@ -324,7 +305,7 @@ export default function Home() {
       {/* ========== SECTION 8: Final CTA ========== */}
       <section className="bg-[#F97068] py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="section-title text-white mb-4">Ready to Plan a Trip?</h2>
+          <h2 className="section-title-white text-3xl mb-6">Ready to Plan a Trip?</h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/tours-and-prices" className="btn-outline-white">
               Learn More
