@@ -36,12 +36,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== SECTION 2: Introduction Content ========== */}
+      {/* ========== SECTION 2: Introduction - ASYMMETRIC with BIGGER decorations ========== */}
       <section className="py-24 px-4 bg-[#FFFAF5] relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
-            {/* Left Column - Text (60%) */}
-            <div className="lg:col-span-3">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            {/* Left Column - Text */}
+            <div className="lg:pr-8">
               <p className="text-[#4A3728] text-base leading-relaxed mb-5">
                 Life Like Locals is the curation of an indigenous collection of original and
                 unique events that induct you into the &quot;real world of the locals&quot;,
@@ -60,10 +60,10 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Right Column - Woman's EYES photo + FLOATING decorative elements */}
-            <div className="lg:col-span-2 relative min-h-[450px] hidden lg:block">
-              {/* Woman's EYES - the main photo cropped to show eyes through palm leaves */}
-              <div className="absolute top-8 right-0 w-[320px] h-[140px] overflow-hidden rounded-2xl shadow-lg">
+            {/* Right Column - BIGGER decorative elements (150-200px) */}
+            <div className="relative min-h-[500px] hidden lg:block">
+              {/* Woman's EYES - prominent */}
+              <div className="absolute top-0 right-0 w-[340px] h-[150px] overflow-hidden rounded-2xl shadow-xl">
                 <Image
                   src="/images/why-choose-us.png"
                   alt="Bahamian woman eyes"
@@ -74,39 +74,54 @@ export default function Home() {
                 />
               </div>
 
-              {/* Watermelon slice - bottom right - FLOATING */}
+              {/* Hat - TOP RIGHT - BIG (200px) */}
               <div
-                className="absolute bottom-0 right-0 w-[100px] float"
-                style={{ '--rotation': '10deg' } as React.CSSProperties}
+                className="absolute top-[20px] right-[-30px] w-[180px] float"
+                style={{ '--rotation': '-10deg' } as React.CSSProperties}
+              >
+                <Image
+                  src="/images/hat1.png"
+                  alt="Bahamian hat"
+                  width={297}
+                  height={710}
+                  className="w-full h-auto drop-shadow-xl"
+                  style={{ borderRadius: '0' }}
+                />
+              </div>
+
+              {/* Watermelon - BOTTOM RIGHT - BIG (180px) */}
+              <div
+                className="absolute bottom-0 right-[20px] w-[150px] float float-delay-1"
+                style={{ '--rotation': '8deg' } as React.CSSProperties}
               >
                 <Image
                   src="/images/Watermelon.png"
                   alt="Watermelon slice"
                   width={168}
                   height={391}
-                  className="w-full h-auto drop-shadow-lg"
+                  className="w-full h-auto drop-shadow-xl"
                   style={{ borderRadius: '0' }}
                 />
               </div>
 
-              {/* Starfish - bottom left - FLOATING */}
+              {/* Starfish - BOTTOM LEFT - BIG (150px) */}
               <div
-                className="absolute bottom-20 left-0 w-[120px] float float-delay-1"
-                style={{ '--rotation': '-15deg' } as React.CSSProperties}
+                className="absolute bottom-[60px] left-0 w-[150px] float float-delay-2"
+                style={{ '--rotation': '-12deg' } as React.CSSProperties}
               >
                 <Image
                   src="/images/Starfish.png"
                   alt="Starfish"
                   width={277}
                   height={475}
-                  className="w-full h-auto drop-shadow-lg"
+                  className="w-full h-auto drop-shadow-xl"
                   style={{ borderRadius: '0' }}
                 />
               </div>
 
-              {/* Orange slice - top left - FLOATING */}
+              {/* Orange slice - TOP LEFT - BIG (150px) */}
               <div
-                className="absolute top-0 left-4 w-[100px] float float-delay-2"
+                className="absolute top-[180px] left-[20px] w-[130px] float"
                 style={{ '--rotation': '5deg' } as React.CSSProperties}
               >
                 <Image
@@ -114,14 +129,14 @@ export default function Home() {
                   alt="Orange slice"
                   width={364}
                   height={447}
-                  className="w-full h-auto drop-shadow-lg"
+                  className="w-full h-auto drop-shadow-xl"
                   style={{ borderRadius: '0' }}
                 />
               </div>
 
-              {/* Purple Drink - middle - FLOATING */}
+              {/* Purple Drink - MIDDLE - BIG (120px) */}
               <div
-                className="absolute top-[180px] left-[100px] w-[80px] float"
+                className="absolute top-[280px] left-[140px] w-[100px] float float-delay-1"
                 style={{ '--rotation': '3deg' } as React.CSSProperties}
               >
                 <Image
@@ -129,7 +144,7 @@ export default function Home() {
                   alt="Purple drink"
                   width={251}
                   height={521}
-                  className="w-full h-auto drop-shadow-lg"
+                  className="w-full h-auto drop-shadow-xl"
                   style={{ borderRadius: '0' }}
                 />
               </div>
@@ -164,7 +179,7 @@ export default function Home() {
       {/* Wave transition from coral */}
       <WaveDivider color="#FFFAF5" flip />
 
-      {/* ========== SECTION 4: Full-Bleed Underwater/Swimming Photo ========== */}
+      {/* ========== SECTION 4: Full-Bleed Underwater Photo ========== */}
       <section
         className="h-[50vh] md:h-[60vh] w-full my-8"
         style={{
@@ -179,39 +194,74 @@ export default function Home() {
         }}
       />
 
-      {/* ========== SECTION 5: Why Choose Us ========== */}
-      <section className="py-24 px-4 bg-[#FFFAF5]" id="what-is-we-do">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="section-title text-3xl mb-3 text-center">Why Choose Us?</h2>
-          <p className="subtitle-script text-center">&quot;Why go wit us?&quot;</p>
+      {/* ========== SECTION 5: Why Choose Us - WITH TEAL BLOB ========== */}
+      <section className="py-24 px-4 bg-[#FFFAF5] relative overflow-hidden" id="what-is-we-do">
+        {/* THE GIANT TEAL BLOB - positioned right */}
+        <div
+          className="absolute hidden lg:block"
+          style={{
+            width: '50%',
+            height: '140%',
+            right: '-5%',
+            top: '-20%',
+            background: '#40E0D0',
+            borderRadius: '40% 60% 70% 30% / 40% 50% 60% 50%',
+            zIndex: 0,
+            opacity: 0.85,
+          }}
+        />
 
-          <div className="text-[#4A3728] leading-relaxed space-y-5">
-            <p>
-              When you book with us, you make a big commitment and we take
-              that very seriously. Our mission is to connect people and cultures.
-              &quot;We does bring people together!&quot;
-            </p>
-            <p>
-              Rather than following the old-fashion way of visiting an island
-              vacation country, experience the vibrancy of the real life that resides
-              on this magnificent island. Become familiar and then become
-              fascinated. You don&apos;t know what you will try, but at least try it!
-            </p>
-            <p>
-              Life Like Local experiences delivered by our team members are
-              curated by our team of travel experts. This way you&apos;re guaranteed
-              authenticity, amusement and memorable moments. Everyone&apos;s story
-              is different, and you will meet many characteristics. Get ready to
-              laugh. Get ready to learn. And most of all get ready to be inspired.
-            </p>
-            <p className="font-semibold italic text-lg text-center">
-              &quot;Yeah ya&apos;ll ga miss us!&quot;
-            </p>
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left - Text (ASYMMETRIC - text is LEFT aligned) */}
+            <div>
+              <h2 className="section-title text-3xl mb-3">Why Choose Us?</h2>
+              <p className="subtitle-script">&quot;Why go wit us?&quot;</p>
+
+              <div className="text-[#4A3728] leading-relaxed space-y-5">
+                <p>
+                  When you book with us, you make a big commitment and we take
+                  that very seriously. Our mission is to connect people and cultures.
+                  &quot;We does bring people together!&quot;
+                </p>
+                <p>
+                  Rather than following the old-fashion way of visiting an island
+                  vacation country, experience the vibrancy of the real life that resides
+                  on this magnificent island. Become familiar and then become
+                  fascinated. You don&apos;t know what you will try, but at least try it!
+                </p>
+                <p>
+                  Life Like Local experiences delivered by our team members are
+                  curated by our team of travel experts. This way you&apos;re guaranteed
+                  authenticity, amusement and memorable moments. Everyone&apos;s story
+                  is different, and you will meet many characteristics. Get ready to
+                  laugh. Get ready to learn. And most of all get ready to be inspired.
+                </p>
+                <p className="font-semibold italic text-lg">
+                  &quot;Yeah ya&apos;ll ga miss us!&quot;
+                </p>
+              </div>
+            </div>
+
+            {/* Right - Decorative space inside the teal blob */}
+            <div className="relative min-h-[300px] hidden lg:flex items-center justify-center">
+              {/* Blue starfish inside the teal blob */}
+              <div className="absolute top-[20%] right-[20%] w-[120px] float">
+                <Image
+                  src="/images/image-10.png"
+                  alt="Blue starfish"
+                  width={277}
+                  height={382}
+                  className="w-full h-auto drop-shadow-xl"
+                  style={{ borderRadius: '0' }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ========== SECTION 6: What To Expect (8 CIRCULAR photos with text OVERLAY) ========== */}
+      {/* ========== SECTION 6: What To Expect - ROUNDED SQUARES (not circles!) ========== */}
       <section className="py-24 px-4 bg-[#FFF8DC]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
@@ -219,7 +269,7 @@ export default function Home() {
             <p className="subtitle-script">&quot;Unique Experiences Unlocked&quot;</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 justify-items-center">
             {[
               { label: "Creative Tourism", img: "/images/What-to-expect-1.png" },
               { label: "Local Gastronomy", img: "/images/What-to-expect-2.png" },
@@ -231,17 +281,17 @@ export default function Home() {
               { label: "Real real Bahamian life", img: "/images/What-to-expect-8.png" },
             ].map((item, idx) => (
               <div key={idx} className="flex flex-col items-center">
-                {/* Circular image with text overlay ON TOP */}
-                <div className="expect-circle">
+                {/* ROUNDED SQUARE with text overlay */}
+                <div className="expect-square">
                   <Image
                     src={item.img}
                     alt={item.label}
                     width={260}
                     height={233}
-                    className="expect-circle-image"
+                    className="expect-square-image"
                   />
-                  <div className="expect-circle-overlay" />
-                  <span className="expect-circle-label">{item.label}</span>
+                  <div className="expect-square-overlay" />
+                  <span className="expect-square-label">{item.label}</span>
                 </div>
               </div>
             ))}
@@ -249,7 +299,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== SECTION 7: What's Included (3 columns) ========== */}
+      {/* ========== SECTION 7: What's Included - TILTED IMAGES ========== */}
       <section className="py-24 px-4 bg-[#FFFAF5]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
@@ -258,8 +308,9 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {/* Card 1 - TILTED LEFT */}
             <div className="text-center">
-              <div className="image-zoom w-full h-52 mb-6 shadow-lg" style={{ borderRadius: '20px' }}>
+              <div className="image-zoom w-full h-56 mb-6 shadow-xl tilt-left" style={{ borderRadius: '20px' }}>
                 <Image
                   src="/images/Whats-included-1-1-1.png"
                   alt="Food and Drink Tastings"
@@ -277,8 +328,9 @@ export default function Home() {
               </p>
             </div>
 
+            {/* Card 2 - TILTED RIGHT */}
             <div className="text-center">
-              <div className="image-zoom w-full h-52 mb-6 shadow-lg" style={{ borderRadius: '20px' }}>
+              <div className="image-zoom w-full h-56 mb-6 shadow-xl tilt-right" style={{ borderRadius: '20px' }}>
                 <Image
                   src="/images/Whats-included-2.png"
                   alt="In-house Tours"
@@ -296,8 +348,9 @@ export default function Home() {
               </p>
             </div>
 
+            {/* Card 3 - TILTED SLIGHT */}
             <div className="text-center">
-              <div className="image-zoom w-full h-52 mb-6 shadow-lg" style={{ borderRadius: '20px' }}>
+              <div className="image-zoom w-full h-56 mb-6 shadow-xl tilt-slight" style={{ borderRadius: '20px' }}>
                 <Image
                   src="/images/Whats-included-3.png"
                   alt="Endless Add-Ons"
@@ -313,7 +366,7 @@ export default function Home() {
                 that add to the adventure. We can customize your tour, your stops and
                 of course, we can arrange private tours.
               </p>
-              <Link href="/tours-and-prices" className="text-[#F97068] hover:underline text-sm font-semibold">
+              <Link href="/tours-and-prices" className="text-[#40E0D0] hover:text-[#F97068] text-sm font-semibold transition-colors">
                 View Add-ons →
               </Link>
             </div>

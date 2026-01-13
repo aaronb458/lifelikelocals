@@ -3,7 +3,7 @@
 
 @import "tailwindcss";
 
-/* ========== BEACHY COLOR PALETTE ========== */
+/* ========== BEACHY COLOR PALETTE - TWO ACCENT COLORS ========== */
 :root {
   /* Primary coral */
   --coral: #F97068;
@@ -11,6 +11,12 @@
   --coral-hover: #E85F57;
   --coral-soft: rgba(249, 112, 104, 0.1);
   --coral-gradient: linear-gradient(135deg, #F97068 0%, #FF8A80 100%);
+
+  /* TEAL ACCENT - THE MISSING COLOR! */
+  --teal: #40E0D0;
+  --teal-light: #7FFFD4;
+  --teal-soft: rgba(64, 224, 208, 0.15);
+  --teal-gradient: linear-gradient(135deg, #40E0D0 0%, #7FFFD4 100%);
 
   /* Tropical accents */
   --turquoise: #40E0D0;
@@ -21,7 +27,7 @@
 
   /* Warm neutrals (NOT cold grays) */
   --warm-white: #FFFAF5;
-  --warm-cream: #FFF9F0;
+  --warm-cream: #FFF8F0;
   --warm-gray: #8B7355;
   --text-warm: #4A3728;
   --text-dark: #3D2E1F;
@@ -31,6 +37,7 @@
   --shadow-soft: 0 8px 30px rgba(139, 115, 85, 0.12);
   --shadow-hover: 0 12px 40px rgba(139, 115, 85, 0.18);
   --shadow-coral: 0 4px 15px rgba(249, 112, 104, 0.3);
+  --shadow-teal: 0 4px 15px rgba(64, 224, 208, 0.3);
 }
 
 * {
@@ -183,55 +190,51 @@ img {
   box-shadow: var(--shadow-coral);
 }
 
-/* ========== WHAT TO EXPECT - Circles with LIFE ========== */
-.expect-circle {
+/* ========== WHAT TO EXPECT - ROUNDED SQUARES (not circles!) ========== */
+.expect-square {
   position: relative;
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px; /* ROUNDED SQUARE, NOT 50% */
   overflow: hidden;
-  box-shadow:
-    0 8px 25px rgba(0, 0, 0, 0.15),
-    0 0 0 3px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.expect-circle:hover {
-  transform: scale(1.1);
-  box-shadow:
-    0 12px 35px rgba(249, 112, 104, 0.3),
-    0 0 0 4px var(--coral-light);
+.expect-square:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 12px 35px rgba(64, 224, 208, 0.3); /* Teal glow on hover */
 }
 
-.expect-circle-image {
+.expect-square-image {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 20px;
   transition: transform 0.4s ease;
 }
 
-.expect-circle:hover .expect-circle-image {
-  transform: scale(1.15);
+.expect-square:hover .expect-square-image {
+  transform: scale(1.1);
 }
 
-.expect-circle-overlay {
+.expect-square-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to bottom,
-    transparent 30%,
-    rgba(0, 0, 0, 0.6) 100%
+    transparent 40%,
+    rgba(0, 0, 0, 0.7) 100%
   );
-  border-radius: 50%;
+  border-radius: 20px;
   z-index: 1;
 }
 
-.expect-circle-label {
+.expect-square-label {
   position: absolute;
-  bottom: 18%;
+  bottom: 12px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
@@ -240,21 +243,65 @@ img {
   font-size: 11px;
   text-align: center;
   z-index: 2;
-  width: 85%;
+  width: 90%;
   line-height: 1.3;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-  text-transform: capitalize;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 @media (min-width: 768px) {
-  .expect-circle {
-    width: 150px;
-    height: 150px;
+  .expect-square {
+    width: 170px;
+    height: 170px;
   }
 
-  .expect-circle-label {
+  .expect-square-label {
     font-size: 12px;
+    bottom: 15px;
   }
+}
+
+/* ========== TEAL BLOB SHAPE ========== */
+.teal-blob {
+  position: absolute;
+  background: var(--teal);
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  z-index: 0;
+  opacity: 0.9;
+}
+
+.teal-blob-right {
+  width: 55%;
+  height: 120%;
+  right: -10%;
+  top: -10%;
+}
+
+/* ========== TILTED IMAGES for What's Included ========== */
+.tilt-left {
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease;
+}
+
+.tilt-left:hover {
+  transform: rotate(-1deg) scale(1.02);
+}
+
+.tilt-right {
+  transform: rotate(3deg);
+  transition: transform 0.3s ease;
+}
+
+.tilt-right:hover {
+  transform: rotate(1deg) scale(1.02);
+}
+
+.tilt-slight {
+  transform: rotate(1.5deg);
+  transition: transform 0.3s ease;
+}
+
+.tilt-slight:hover {
+  transform: rotate(0deg) scale(1.02);
 }
 
 /* ========== CARDS with Soft Shadows ========== */
