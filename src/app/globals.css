@@ -25,28 +25,28 @@ body {
   font-weight: 400;
 }
 
-/* Headings - Playfair Display */
+/* Headings - Playfair Display (ELEGANT, not bold) */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--text-dark);
   line-height: 1.3;
 }
 
-/* Section Titles - Playfair Display, uppercase, letter-spaced */
+/* Section Titles - Playfair Display, uppercase, letter-spaced, ELEGANT weight */
 .section-title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   color: #F97068;
 }
 
 .section-title-white {
   font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   color: white;
 }
 
@@ -69,10 +69,10 @@ h1, h2, h3, h4, h5, h6 {
 .hero-title {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 500;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   line-height: 1.2;
 }
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Item Titles (What's Included cards) - Playfair Display */
 .item-title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 600;
+  font-weight: 500;
   color: #333;
 }
 
@@ -195,6 +195,61 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   width: 80%;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* NEW: Circular What to Expect items with text overlay */
+.expect-circle {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.expect-circle-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.expect-circle-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.expect-circle-label {
+  position: absolute;
+  bottom: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  z-index: 2;
+  width: 85%;
+  line-height: 1.3;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+  .expect-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .expect-circle-label {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 768px) {

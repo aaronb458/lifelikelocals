@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      {/* ========== SECTION 1: Hero Banner ========== */}
+      {/* ========== SECTION 1: Hero Banner - AERIAL BEACH ========== */}
       <section
         className="relative min-h-[70vh] flex items-center justify-center pt-[65px]"
         style={{
-          backgroundImage: `url('/images/Banner.jpg')`,
+          backgroundImage: `url('/images/Banner.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -58,43 +58,33 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Right Column - Decorative elements */}
+            {/* Right Column - Woman's EYES photo + decorative elements */}
             <div className="lg:col-span-2 relative min-h-[450px] hidden lg:block">
-              {/* Orange Slice - top left */}
-              <div className="absolute top-0 left-0 w-[120px]">
+              {/* Woman's EYES - the main photo cropped to show eyes through palm leaves */}
+              <div className="absolute top-8 right-0 w-[320px] h-[140px] overflow-hidden rounded-xl shadow-lg">
                 <Image
-                  src="/images/orange-slice.png"
-                  alt="Orange slice"
-                  width={364}
-                  height={447}
-                  className="w-full h-auto drop-shadow-lg"
+                  src="/images/why-choose-us.png"
+                  alt="Bahamian woman eyes"
+                  width={1440}
+                  height={615}
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: 'center 30%' }}
                 />
               </div>
 
-              {/* Purple Drink - top right */}
-              <div className="absolute top-0 right-0 w-[100px]">
+              {/* Watermelon slice - bottom right */}
+              <div className="absolute bottom-0 right-0 w-[100px]">
                 <Image
-                  src="/images/Purple-drink-1.png"
-                  alt="Purple drink"
-                  width={251}
-                  height={521}
-                  className="w-full h-auto drop-shadow-lg"
-                />
-              </div>
-
-              {/* Hat - middle */}
-              <div className="absolute top-[100px] left-[80px] w-[120px]">
-                <Image
-                  src="/images/hat1.png"
-                  alt="Bahamian hat"
-                  width={297}
-                  height={710}
+                  src="/images/Watermelon.png"
+                  alt="Watermelon slice"
+                  width={168}
+                  height={391}
                   className="w-full h-auto drop-shadow-lg"
                 />
               </div>
 
               {/* Starfish - bottom left */}
-              <div className="absolute bottom-0 left-0 w-[110px]">
+              <div className="absolute bottom-20 left-0 w-[120px]">
                 <Image
                   src="/images/Starfish.png"
                   alt="Starfish"
@@ -104,13 +94,24 @@ export default function Home() {
                 />
               </div>
 
-              {/* Watermelon - bottom right */}
-              <div className="absolute bottom-0 right-[20px] w-[80px]">
+              {/* Orange slice - top left */}
+              <div className="absolute top-0 left-4 w-[100px]">
                 <Image
-                  src="/images/Watermelon.png"
-                  alt="Watermelon slice"
-                  width={168}
-                  height={391}
+                  src="/images/orange-slice.png"
+                  alt="Orange slice"
+                  width={364}
+                  height={447}
+                  className="w-full h-auto drop-shadow-lg"
+                />
+              </div>
+
+              {/* Purple Drink - middle */}
+              <div className="absolute top-[180px] left-[100px] w-[80px]">
+                <Image
+                  src="/images/Purple-drink-1.png"
+                  alt="Purple drink"
+                  width={251}
+                  height={521}
                   className="w-full h-auto drop-shadow-lg"
                 />
               </div>
@@ -139,11 +140,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== SECTION 4: Full-Bleed Underwater Photo ========== */}
+      {/* ========== SECTION 4: Full-Bleed Underwater/Swimming Photo ========== */}
       <section
         className="h-[50vh] md:h-[60vh] w-full"
         style={{
-          backgroundImage: `url('/images/Banner-4.jpg')`,
+          backgroundImage: `url('/images/Banner-2-2.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -181,7 +182,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== SECTION 6: What To Expect (8 circular images) ========== */}
+      {/* ========== SECTION 6: What To Expect (8 CIRCULAR photos with text OVERLAY) ========== */}
       <section className="py-20 px-4 bg-[#f9f9f9]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
@@ -201,14 +202,17 @@ export default function Home() {
               { label: "Real real Bahamian life", img: "/images/What-to-expect-8.png" },
             ].map((item, idx) => (
               <div key={idx} className="flex flex-col items-center">
-                <div className="w-28 h-28 md:w-36 md:h-36 relative">
+                {/* Circular image with text overlay ON TOP */}
+                <div className="expect-circle">
                   <Image
                     src={item.img}
                     alt={item.label}
                     width={260}
                     height={233}
-                    className="w-full h-full object-contain drop-shadow-lg"
+                    className="expect-circle-image"
                   />
+                  <div className="expect-circle-overlay" />
+                  <span className="expect-circle-label">{item.label}</span>
                 </div>
               </div>
             ))}
@@ -216,7 +220,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== SECTION 7: What's Included (3 columns) ========== */}
+      {/* ========== SECTION 7: What's Included (3 columns - STRAIGHT, not tilted) ========== */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
