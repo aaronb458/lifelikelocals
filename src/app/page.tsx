@@ -62,43 +62,84 @@ export default function Home() {
             </div>
 
             {/* Right Column - Woman's eyes + decorative elements (40%) */}
-            <div className="lg:col-span-2 relative min-h-[400px] hidden lg:block">
-              {/* Woman's eyes/face cropped photo */}
-              <div className="absolute top-0 right-0 w-full h-[280px] overflow-hidden rounded-lg">
+            <div className="lg:col-span-2 relative min-h-[450px] hidden lg:block">
+              {/* Woman's EYES/face cropped photo - intimate, inviting */}
+              <div className="absolute top-8 right-0 w-[320px] h-[200px] overflow-hidden rounded-xl shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80"
-                  alt="Bahamian experience"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80"
+                  alt="Bahamian woman"
                   fill
-                  className="object-cover object-[center_25%]"
+                  className="object-cover object-[center_15%]"
+                  style={{ objectPosition: 'center 25%' }}
                   unoptimized
                 />
               </div>
 
-              {/* Decorative elements - starfish */}
-              <div className="absolute bottom-20 left-0 w-16 h-16">
-                <svg viewBox="0 0 100 100" className="w-full h-full text-[#F97068] opacity-80">
-                  <polygon points="50,5 61,40 98,40 68,62 79,97 50,75 21,97 32,62 2,40 39,40" fill="currentColor"/>
+              {/* LARGE Watermelon slice - bottom right, prominent */}
+              <div className="absolute bottom-0 right-0 w-[140px] h-[140px]">
+                <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-lg">
+                  {/* Rind */}
+                  <path d="M5 85 Q50 -10 95 85 Z" fill="#2d5a27"/>
+                  {/* White part */}
+                  <path d="M10 80 Q50 0 90 80 Z" fill="#e8f5e9"/>
+                  {/* Red flesh */}
+                  <path d="M15 75 Q50 10 85 75 Z" fill="#ef5350"/>
+                  {/* Seeds */}
+                  <ellipse cx="35" cy="50" rx="4" ry="6" fill="#333" transform="rotate(-20 35 50)"/>
+                  <ellipse cx="50" cy="45" rx="4" ry="6" fill="#333" transform="rotate(5 50 45)"/>
+                  <ellipse cx="65" cy="50" rx="4" ry="6" fill="#333" transform="rotate(20 65 50)"/>
+                  <ellipse cx="42" cy="62" rx="3" ry="5" fill="#333" transform="rotate(-10 42 62)"/>
+                  <ellipse cx="58" cy="62" rx="3" ry="5" fill="#333" transform="rotate(10 58 62)"/>
                 </svg>
               </div>
 
-              {/* Decorative elements - watermelon slice */}
-              <div className="absolute bottom-0 right-10 w-20 h-20">
-                <svg viewBox="0 0 100 100" className="w-full h-full">
-                  <path d="M10 80 Q50 0 90 80 Z" fill="#ff6b6b"/>
-                  <path d="M15 75 Q50 10 85 75 Z" fill="#ff8787"/>
-                  <path d="M20 70 Q50 20 80 70 Z" fill="#ffa8a8"/>
-                  <circle cx="35" cy="55" r="3" fill="#333"/>
-                  <circle cx="50" cy="50" r="3" fill="#333"/>
-                  <circle cx="65" cy="55" r="3" fill="#333"/>
-                  <circle cx="42" cy="65" r="2" fill="#333"/>
-                  <circle cx="58" cy="65" r="2" fill="#333"/>
+              {/* LARGE Starfish - left side, prominent */}
+              <div className="absolute bottom-16 -left-4 w-[120px] h-[120px]">
+                <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-lg">
+                  <polygon
+                    points="50,5 61,35 95,35 68,57 79,90 50,70 21,90 32,57 5,35 39,35"
+                    fill="#F97068"
+                  />
+                  {/* Texture dots */}
+                  <circle cx="50" cy="45" r="3" fill="#E85F57"/>
+                  <circle cx="40" cy="50" r="2" fill="#E85F57"/>
+                  <circle cx="60" cy="50" r="2" fill="#E85F57"/>
+                  <circle cx="45" cy="58" r="2" fill="#E85F57"/>
+                  <circle cx="55" cy="58" r="2" fill="#E85F57"/>
                 </svg>
               </div>
 
-              {/* Decorative elements - tropical leaf */}
-              <div className="absolute top-[300px] left-10 w-14 h-14 rotate-45">
-                <svg viewBox="0 0 100 100" className="w-full h-full text-green-500 opacity-70">
-                  <ellipse cx="50" cy="50" rx="20" ry="45" fill="currentColor"/>
+              {/* Orange/citrus slice - top left of photo */}
+              <div className="absolute top-0 left-8 w-[100px] h-[100px]">
+                <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-md">
+                  {/* Orange rind */}
+                  <circle cx="50" cy="50" r="45" fill="#ff9800"/>
+                  {/* Inner orange */}
+                  <circle cx="50" cy="50" r="38" fill="#ffb74d"/>
+                  {/* Segments */}
+                  <path d="M50 12 L50 88" stroke="#ff9800" strokeWidth="2"/>
+                  <path d="M12 50 L88 50" stroke="#ff9800" strokeWidth="2"/>
+                  <path d="M22 22 L78 78" stroke="#ff9800" strokeWidth="2"/>
+                  <path d="M78 22 L22 78" stroke="#ff9800" strokeWidth="2"/>
+                  {/* Center */}
+                  <circle cx="50" cy="50" r="8" fill="#fff3e0"/>
+                </svg>
+              </div>
+
+              {/* Tropical leaf - behind photo */}
+              <div className="absolute top-[-20px] right-[-30px] w-[100px] h-[160px] -z-10 rotate-[30deg]">
+                <svg viewBox="0 0 60 100" className="w-full h-full">
+                  <path d="M30 0 Q60 30 50 50 Q60 70 30 100 Q0 70 10 50 Q0 30 30 0" fill="#4caf50" opacity="0.7"/>
+                  <path d="M30 10 L30 90" stroke="#388e3c" strokeWidth="2" opacity="0.5"/>
+                </svg>
+              </div>
+
+              {/* Small lime/fruit - scattered */}
+              <div className="absolute top-[220px] right-[280px] w-[60px] h-[60px]">
+                <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-md">
+                  <circle cx="50" cy="50" r="40" fill="#8bc34a"/>
+                  <circle cx="50" cy="50" r="30" fill="#aed581"/>
+                  <circle cx="50" cy="50" r="5" fill="#689f38"/>
                 </svg>
               </div>
             </div>
