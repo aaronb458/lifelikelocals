@@ -5,118 +5,96 @@ export default function Home() {
   return (
     <>
       {/* Hero Section - Tropical Island */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-visible">
+        {/* Background Image - Tropical Island Aerial */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1920&q=80')`,
           }}
         />
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/40" />
 
         {/* Content */}
-        <div className="relative z-10 text-center px-4 pt-20">
-          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-wide mb-6 drop-shadow-lg">
+        <div className="relative z-10 text-center px-4 pt-16 max-w-4xl mx-auto">
+          <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wider mb-6" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}>
             Experience &quot;Life Like Locals&quot;<br />
-            <span className="font-normal">in the Bahamas</span>
+            in the Bahamas
           </h1>
-          <p className="text-white/90 text-lg md:text-xl max-w-2xl mx-auto mb-10 drop-shadow-md">
+          <p className="text-white text-base md:text-lg max-w-2xl mx-auto mb-8" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
             Life Like Locals is an innovative, down-home Bahamian experience that
             inspires and evokes the real &quot;Bahamian connection&quot;.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/tours-and-prices" className="btn-coral text-lg px-8 py-4">
+            <Link href="/tours-and-prices" className="btn-coral">
               Learn More
             </Link>
-            <Link href="/contact" className="btn-outline-white text-lg px-8 py-4">
+            <Link href="/contact" className="btn-outline-white">
               Contact Us
             </Link>
           </div>
         </div>
 
-        {/* Floating Drink Image */}
-        <div className="absolute bottom-0 right-0 md:right-10 lg:right-20 w-48 md:w-64 lg:w-80 transform translate-y-10">
+        {/* Floating Drink Image - positioned to extend below hero */}
+        <div className="absolute -bottom-32 right-4 md:right-16 lg:right-24 z-20 w-40 md:w-56 lg:w-72">
           <Image
             src="https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/Purple-drink-1.png"
             alt="Tropical Drink"
-            width={320}
-            height={500}
+            width={288}
+            height={450}
             className="drop-shadow-2xl"
+            style={{ filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))' }}
             unoptimized
           />
         </div>
       </section>
 
       {/* About Section */}
-      <section className="py-20 px-4 overflow-hidden">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div className="relative">
-              <p className="text-[#666] text-lg leading-relaxed mb-6">
+      <section className="py-24 px-4 overflow-visible relative">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div className="lg:pr-8">
+              <p className="text-[#666] text-base leading-relaxed mb-5">
                 Life Like Locals is the curation of an indigenous collection of original and
                 unique events that induct you into the &quot;real world of the locals&quot;,
                 introducing our way of life, from the food, to the dances, to the heart and
                 spirit of The Bahamas. Our goal is to give you an experience that you will
                 never forget. &quot;This ain&apos;t no lie, you ain&apos;t go neva meet people like us, fa tru!&quot;
               </p>
-              <p className="text-[#666] text-lg leading-relaxed mb-6">
+              <p className="text-[#666] text-base leading-relaxed mb-5">
                 We invite you to feel our vibrant character, learn our accent, embrace our
                 lingo, share in the flavor of our food, and experience the unity of
                 traditional and contemporary, and most importantly, become a part of it!
                 Don&apos;t be a &quot;typical tourist&quot;, live a little and enjoy life.
               </p>
-              <p className="text-[#666] text-lg font-semibold">
+              <p className="text-[#666] text-base font-semibold">
                 What are you waiting for?
               </p>
             </div>
-            <div className="relative h-[400px] hidden lg:block">
-              {/* Floating fruit/drink composition */}
-              <Image
-                src="https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/Purple-drink-1.png"
-                alt="Tropical Drink"
-                width={200}
-                height={400}
-                className="absolute right-10 top-0 drop-shadow-xl transform rotate-6"
-                unoptimized
-              />
-              <Image
-                src="https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/orange-slice.png"
-                alt="Orange Slice"
-                width={150}
-                height={150}
-                className="absolute left-0 top-20 drop-shadow-xl"
-                unoptimized
-              />
-              {/* Decorative leaf */}
-              <div className="absolute -left-10 top-0 w-32 h-32 opacity-60">
-                <svg viewBox="0 0 100 100" className="w-full h-full text-green-500">
-                  <path fill="currentColor" d="M50 0 C80 30 90 70 50 100 C10 70 20 30 50 0Z" />
-                </svg>
-              </div>
-            </div>
+            {/* Empty space for floating drink to show */}
+            <div className="hidden lg:block" />
           </div>
         </div>
       </section>
 
-      {/* Explore Experiences - Coral Banner with Face Image */}
+      {/* Explore Experiences - Coral Banner (Face on LEFT, Text on RIGHT) */}
       <section className="relative bg-coral overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          {/* Face Image */}
+          {/* Face Image - LEFT side */}
           <div
-            className="h-64 lg:h-auto lg:min-h-[400px] bg-cover bg-center"
+            className="h-80 lg:h-auto lg:min-h-[450px] bg-cover bg-center"
             style={{
               backgroundImage: `url('https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80')`,
-              backgroundPosition: 'center 20%',
+              backgroundPosition: 'center 30%',
             }}
           />
-          {/* Content */}
-          <div className="py-16 px-8 lg:px-16 flex flex-col justify-center">
-            <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wider mb-4">
+          {/* Content - RIGHT side */}
+          <div className="py-16 px-8 lg:px-16 flex flex-col justify-center items-start">
+            <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wider mb-2 leading-tight">
               Explore Our Top<br />Experiences
             </h2>
-            <p className="text-white/90 text-lg italic mb-8">&quot;Unique Experiences Unlocked&quot;</p>
+            <p className="text-white/90 text-base italic mb-8">&quot;Unique Experiences Unlocked&quot;</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/tours-and-prices" className="btn-white">
                 See Tours
@@ -129,20 +107,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-20 overflow-hidden">
+      {/* Why Choose Us - Beach image LEFT, Content RIGHT, floating elements */}
+      <section className="py-20 overflow-visible relative">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Image with floating elements */}
+            {/* Image with floating elements - LEFT */}
             <div className="relative">
               <div
-                className="rounded-2xl overflow-hidden h-[500px] bg-cover bg-center shadow-2xl"
+                className="rounded-2xl overflow-hidden h-[450px] lg:h-[550px] bg-cover bg-center shadow-xl"
                 style={{
                   backgroundImage: `url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80')`,
                 }}
               />
-              {/* Floating drink */}
-              <div className="absolute -right-10 -bottom-10 w-48 hidden lg:block">
+              {/* Floating drink overlapping from right */}
+              <div className="absolute -right-8 lg:-right-16 bottom-0 w-36 lg:w-48 z-10">
                 <Image
                   src="https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/Purple-drink-1.png"
                   alt="Tropical Drink"
@@ -152,21 +130,21 @@ export default function Home() {
                   unoptimized
                 />
               </div>
-              {/* Floating fruit */}
-              <div className="absolute -left-5 bottom-20 hidden lg:block">
+              {/* Floating orange slice */}
+              <div className="absolute -right-4 lg:-right-8 top-1/4 w-20 lg:w-28 z-10">
                 <Image
                   src="https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/orange-slice.png"
                   alt="Orange"
-                  width={100}
-                  height={100}
+                  width={112}
+                  height={112}
                   className="drop-shadow-xl"
                   unoptimized
                 />
               </div>
             </div>
 
-            {/* Content */}
-            <div>
+            {/* Content - RIGHT */}
+            <div className="lg:pl-8">
               <h2 className="text-[#333] text-3xl md:text-4xl font-bold mb-2">Why Choose Us?</h2>
               <p className="text-coral italic text-lg mb-6">&quot;Why go wit us?&quot;</p>
               <p className="text-[#666] mb-4 leading-relaxed">
@@ -196,16 +174,16 @@ export default function Home() {
       </section>
 
       {/* What to Expect Grid */}
-      <section className="py-20 bg-[#f8f8f8]">
+      <section className="py-20 bg-[#f5f5f5]">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-coral text-3xl md:text-4xl font-bold uppercase tracking-wider mb-3">
+          <div className="text-center mb-10">
+            <h2 className="text-coral text-3xl md:text-4xl font-bold uppercase tracking-wider mb-2">
               What to Expect
             </h2>
-            <p className="text-[#666] italic text-lg">&quot;Unique Experiences Unlocked&quot;</p>
+            <p className="text-[#666] italic">&quot;Unique Experiences Unlocked&quot;</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
             {[
               { label: "Creative Tourism", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" },
               { label: "Local Gastronomy", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80" },
@@ -218,14 +196,14 @@ export default function Home() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="relative h-40 md:h-48 rounded-lg overflow-hidden group cursor-pointer"
+                className="relative h-36 md:h-44 overflow-hidden group cursor-pointer"
               >
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                   style={{ backgroundImage: `url('${item.img}')` }}
                 />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-coral/70 transition-colors duration-300" />
-                <span className="absolute bottom-4 left-4 right-4 text-white font-semibold text-sm md:text-base drop-shadow-lg">
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-coral/80 transition-all duration-300" />
+                <span className="absolute bottom-3 left-3 right-3 text-white font-semibold text-xs md:text-sm" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
                   {item.label}
                 </span>
               </div>
@@ -236,24 +214,24 @@ export default function Home() {
 
       {/* What's Included */}
       <section className="py-20">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-coral text-3xl md:text-4xl font-bold uppercase tracking-wider mb-3">
+            <h2 className="text-coral text-3xl md:text-4xl font-bold uppercase tracking-wider mb-2">
               What&apos;s Included
             </h2>
-            <p className="text-[#666] italic text-lg">&quot;What yinna getting&quot;</p>
+            <p className="text-[#666] italic">&quot;What yinna getting&quot;</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
+              <div className="w-40 h-40 mx-auto mb-5 rounded-full overflow-hidden shadow-lg border-4 border-white">
                 <div
                   className="w-full h-full bg-cover bg-center"
                   style={{ backgroundImage: `url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80')` }}
                 />
               </div>
-              <h4 className="text-[#333] text-xl font-bold mb-3">Food and Drink Tastings</h4>
-              <p className="text-[#666] leading-relaxed">
+              <h4 className="text-[#333] text-lg font-bold mb-3">Food and Drink Tastings</h4>
+              <p className="text-[#666] text-sm leading-relaxed">
                 Let your taste buds dive into home-made
                 Bahamian dishes that will &quot;have ya belly
                 full&quot;! You will definitely remember this tour
@@ -262,14 +240,14 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
+              <div className="w-40 h-40 mx-auto mb-5 rounded-full overflow-hidden shadow-lg border-4 border-white">
                 <div
                   className="w-full h-full bg-cover bg-center"
                   style={{ backgroundImage: `url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&q=80')` }}
                 />
               </div>
-              <h4 className="text-[#333] text-xl font-bold mb-3">In-house Tours</h4>
-              <p className="text-[#666] leading-relaxed">
+              <h4 className="text-[#333] text-lg font-bold mb-3">In-house Tours</h4>
+              <p className="text-[#666] text-sm leading-relaxed">
                 Become infused with the local vibe as you
                 blend into Bahamian lifestyle. Hear our
                 stories and make some island friends. Feast
@@ -279,21 +257,21 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
+              <div className="w-40 h-40 mx-auto mb-5 rounded-full overflow-hidden shadow-lg border-4 border-white">
                 <div
                   className="w-full h-full bg-cover bg-center"
                   style={{ backgroundImage: `url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&q=80')` }}
                 />
               </div>
-              <h4 className="text-[#333] text-xl font-bold mb-3">Endless Add-Ons</h4>
-              <p className="text-[#666] leading-relaxed mb-2">
+              <h4 className="text-[#333] text-lg font-bold mb-3">Endless Add-Ons</h4>
+              <p className="text-[#666] text-sm leading-relaxed mb-2">
                 For those of you that need that extra, we
                 have a slew of add-on tours that add to the
                 adventure. We can customize your tour,
                 your stops and of course, we can arrange
                 private tours.
               </p>
-              <Link href="/tours-and-prices" className="text-coral hover:underline font-medium">
+              <Link href="/tours-and-prices" className="text-coral hover:underline text-sm font-medium">
                 Add-ons
               </Link>
             </div>
@@ -302,56 +280,56 @@ export default function Home() {
       </section>
 
       {/* Our Tours Section */}
-      <section className="py-20 bg-[#f8f8f8]">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-[#333] text-3xl md:text-4xl font-bold mb-4">Our Tours</h2>
-            <p className="text-[#666] max-w-2xl mx-auto">
+      <section className="py-20 bg-[#f5f5f5]">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-[#333] text-3xl md:text-4xl font-bold mb-3">Our Tours</h2>
+            <p className="text-[#666]">
               Choose from our carefully crafted experiences designed to show you
               the real Bahamas.
             </p>
           </div>
 
           {/* Main Tour */}
-          <div className="bg-white rounded-2xl overflow-hidden shadow-xl mb-10">
+          <div className="bg-white rounded-xl overflow-hidden shadow-lg mb-8">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div
-                className="h-72 lg:h-auto lg:min-h-[400px] bg-cover bg-center"
+                className="h-64 lg:h-auto lg:min-h-[350px] bg-cover bg-center"
                 style={{
                   backgroundImage: `url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80')`,
                 }}
               />
-              <div className="p-8 lg:p-12 flex flex-col justify-center">
-                <h3 className="text-[#333] text-2xl md:text-3xl font-bold mb-4">
+              <div className="p-8 flex flex-col justify-center">
+                <h3 className="text-[#333] text-2xl font-bold mb-3">
                   Cultural Experience Tour with Lunch
                 </h3>
-                <p className="text-[#666] mb-6 leading-relaxed">
+                <p className="text-[#666] text-sm mb-5 leading-relaxed">
                   Immerse yourself in authentic Bahamian culture with our
                   signature tour. Meet local Bahamians, enjoy traditional dishes,
                   and hear authentic stories from residents who emphasize
                   genuine interaction over typical tourist experiences.
                 </p>
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-2 mb-5">
                   {[
                     "Traditional Bahamian lunch included",
                     "Native guide with local expertise",
                     "Visit to cultural sites",
                     "Authentic storytelling",
                   ].map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-[#666]">
-                      <svg className="w-5 h-5 text-coral flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <li key={idx} className="flex items-center gap-2 text-[#666] text-sm">
+                      <svg className="w-4 h-4 text-coral flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                       {item}
                     </li>
                   ))}
                 </ul>
-                <div className="flex items-baseline gap-3 mb-6">
-                  <span className="text-coral text-4xl font-bold">$50</span>
-                  <span className="text-[#666]">/adult</span>
-                  <span className="text-[#999] text-sm ml-2">$25 for Kids 10 and under</span>
+                <div className="flex items-baseline gap-2 mb-5">
+                  <span className="text-coral text-3xl font-bold">$50</span>
+                  <span className="text-[#666] text-sm">/adult</span>
+                  <span className="text-[#999] text-xs ml-2">$25 for Kids 10 and under</span>
                 </div>
-                <Link href="/contact" className="btn-coral self-start">
+                <Link href="/contact" className="btn-coral self-start text-sm">
                   Book Now
                 </Link>
               </div>
@@ -359,55 +337,55 @@ export default function Home() {
           </div>
 
           {/* Add-on Tours */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <div
-                className="h-56 bg-cover bg-center"
+                className="h-48 bg-cover bg-center"
                 style={{
                   backgroundImage: `url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80')`,
                 }}
               />
-              <div className="p-6">
-                <span className="inline-block bg-coral text-white text-xs font-bold px-3 py-1 rounded mb-3 uppercase tracking-wide">
+              <div className="p-5">
+                <span className="inline-block bg-coral text-white text-[10px] font-bold px-2 py-1 rounded mb-2 uppercase tracking-wide">
                   Add-On Tour
                 </span>
-                <h4 className="text-[#333] text-xl font-bold mb-2">Two-Hour Bus Tour</h4>
-                <p className="text-[#666] text-sm mb-4 leading-relaxed">
+                <h4 className="text-[#333] text-lg font-bold mb-2">Two-Hour Bus Tour</h4>
+                <p className="text-[#666] text-sm mb-3 leading-relaxed">
                   Explore neighborhoods tourists typically don&apos;t visit. See how
                   locals live, discover hidden spots, and learn about communities
                   across Nassau.
                 </p>
-                <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-coral text-2xl font-bold">$50</span>
-                  <span className="text-[#666] text-sm">/person</span>
+                <div className="flex items-baseline gap-2 mb-3">
+                  <span className="text-coral text-xl font-bold">$50</span>
+                  <span className="text-[#666] text-xs">/person</span>
                 </div>
-                <Link href="/tours-and-prices" className="btn-outline text-sm">
+                <Link href="/tours-and-prices" className="btn-outline text-xs py-2 px-4">
                   Learn More
                 </Link>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <div
-                className="h-56 bg-cover bg-center"
+                className="h-48 bg-cover bg-center"
                 style={{
                   backgroundImage: `url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80')`,
                 }}
               />
-              <div className="p-6">
-                <span className="inline-block bg-coral text-white text-xs font-bold px-3 py-1 rounded mb-3 uppercase tracking-wide">
+              <div className="p-5">
+                <span className="inline-block bg-coral text-white text-[10px] font-bold px-2 py-1 rounded mb-2 uppercase tracking-wide">
                   Add-On Tour
                 </span>
-                <h4 className="text-[#333] text-xl font-bold mb-2">Walking Tour</h4>
-                <p className="text-[#666] text-sm mb-4 leading-relaxed">
+                <h4 className="text-[#333] text-lg font-bold mb-2">Walking Tour</h4>
+                <p className="text-[#666] text-sm mb-3 leading-relaxed">
                   A 45-minute guided walk through a historic area near our home
                   base. Discover significant island landmarks and hidden stories.
                 </p>
-                <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-coral text-2xl font-bold">$30</span>
-                  <span className="text-[#666] text-sm">/person</span>
+                <div className="flex items-baseline gap-2 mb-3">
+                  <span className="text-coral text-xl font-bold">$30</span>
+                  <span className="text-[#666] text-xs">/person</span>
                 </div>
-                <Link href="/tours-and-prices" className="btn-outline text-sm">
+                <Link href="/tours-and-prices" className="btn-outline text-xs py-2 px-4">
                   Learn More
                 </Link>
               </div>
@@ -416,21 +394,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-[#333] text-3xl md:text-4xl font-bold mb-4">
+      {/* CTA Section - Clean white background */}
+      <section className="py-16">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <h2 className="text-[#333] text-3xl font-bold mb-3">
             Ready to Plan a Trip?
           </h2>
-          <p className="text-[#666] text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-[#666] mb-8">
             Book your authentic Bahamian adventure today and create memories that
             will last a lifetime.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/tours-and-prices" className="btn-coral text-lg px-8 py-4">
+            <Link href="/tours-and-prices" className="btn-coral">
               Learn More
             </Link>
-            <Link href="/contact" className="btn-outline text-lg px-8 py-4">
+            <Link href="/contact" className="btn-outline">
               Contact Us
             </Link>
           </div>
@@ -438,43 +416,43 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-[#f8f8f8]">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-[#333] text-3xl md:text-4xl font-bold">Get In Touch</h2>
+      <section className="py-16 bg-[#f5f5f5]">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-[#333] text-3xl font-bold">Get In Touch</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-coral rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-14 h-14 bg-coral rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h4 className="text-[#333] font-bold text-lg mb-2">Email Us</h4>
-              <a href="mailto:lifelikelocals@gmail.com" className="text-coral hover:underline">
+              <h4 className="text-[#333] font-bold mb-1">Email Us</h4>
+              <a href="mailto:lifelikelocals@gmail.com" className="text-coral hover:underline text-sm">
                 lifelikelocals@gmail.com
               </a>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-coral rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-14 h-14 bg-coral rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
               </div>
-              <h4 className="text-[#333] font-bold text-lg mb-2">Call Us</h4>
-              <a href="tel:242-815-8687" className="text-coral hover:underline">
+              <h4 className="text-[#333] font-bold mb-1">Call Us</h4>
+              <a href="tel:242-815-8687" className="text-coral hover:underline text-sm">
                 242-815-8687 (TOUR)
               </a>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-coral rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-14 h-14 bg-coral rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h4 className="text-[#333] font-bold text-lg mb-2">Location</h4>
-              <p className="text-[#666]">
+              <h4 className="text-[#333] font-bold mb-1">Location</h4>
+              <p className="text-[#666] text-sm">
                 P.O. Box SS-19731<br />
                 Nassau, Bahamas
               </p>
