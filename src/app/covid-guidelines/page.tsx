@@ -13,7 +13,7 @@ export default function CovidGuidelines() {
       <section
         className="hero-section pt-20"
         style={{
-          backgroundImage: `url('https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/Banner-2.jpg')`,
+          backgroundImage: `url('/images/Banner-2.jpg')`,
           minHeight: "400px",
         }}
       >

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const navLinks = [
@@ -18,13 +19,15 @@ export default function Header() {
     <header className="bg-[#F97068] fixed top-0 left-0 right-0 z-50">
       <div className="max-w-6xl mx-auto px-4">
         <nav className="flex items-center justify-between h-[65px]">
-          {/* Logo - Palm tree icon */}
+          {/* Logo */}
           <Link href="/" className="flex items-center">
-            <svg className="w-10 h-10 text-white" viewBox="0 0 100 100" fill="currentColor">
-              <path d="M50 90 L50 50 M50 50 Q30 30 15 35 Q35 25 50 50 Q65 25 85 35 Q70 30 50 50"
-                    stroke="currentColor" strokeWidth="4" fill="none"/>
-              <ellipse cx="50" cy="92" rx="15" ry="5" fill="currentColor" opacity="0.3"/>
-            </svg>
+            <Image
+              src="/images/LLL_Logo_1.png"
+              alt="Life Like Locals"
+              width={50}
+              height={50}
+              className="h-[50px] w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

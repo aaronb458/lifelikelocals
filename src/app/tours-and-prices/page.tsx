@@ -14,7 +14,7 @@ export default function ToursAndPrices() {
       <section
         className="hero-section pt-20"
         style={{
-          backgroundImage: `url('https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/Banner-3.jpg')`,
+          backgroundImage: `url('/images/Banner-3.jpg')`,
           minHeight: "400px",
         }}
       >
@@ -35,7 +35,7 @@ export default function ToursAndPrices() {
             <div
               className="min-h-[400px] rounded-lg bg-cover bg-center shadow-2xl"
               style={{
-                backgroundImage: `url('https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/Product-1.jpg')`,
+                backgroundImage: `url('/images/Product-1.jpg')`,
               }}
             />
             <div>
@@ -161,7 +161,7 @@ export default function ToursAndPrices() {
               <div
                 className="card-image"
                 style={{
-                  backgroundImage: `url('https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/Product-2.jpg')`,
+                  backgroundImage: `url('/images/Product-2.jpg')`,
                 }}
               />
               <div className="card-content">
@@ -198,7 +198,7 @@ export default function ToursAndPrices() {
               <div
                 className="card-image"
                 style={{
-                  backgroundImage: `url('https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/Product-3.jpg')`,
+                  backgroundImage: `url('/images/Product-3.jpg')`,
                 }}
               />
               <div className="card-content">
@@ -311,7 +311,7 @@ export default function ToursAndPrices() {
       <section
         className="hero-section hero-light section-padding parallax"
         style={{
-          backgroundImage: `url('https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/Banner-4.jpg')`,
+          backgroundImage: `url('/images/Banner-4.jpg')`,
         }}
       >
         <div className="container-custom hero-content text-center mx-auto">

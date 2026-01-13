@@ -14,7 +14,7 @@ export default function Contact() {
       <section
         className="hero-section pt-20"
         style={{
-          backgroundImage: `url('https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/Banner-4.jpg')`,
+          backgroundImage: `url('/images/Banner-4.jpg')`,
           minHeight: "400px",
         }}
       >

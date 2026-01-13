@@ -166,7 +166,7 @@ export default function FAQs() {
       <section
         className="hero-section pt-20"
         style={{
-          backgroundImage: `url('https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/Banner-2.jpg')`,
+          backgroundImage: `url('/images/Banner-2.jpg')`,
           minHeight: "400px",
         }}
       >
@@ -247,7 +247,7 @@ export default function FAQs() {
       <section
         className="hero-section hero-light section-padding parallax"
         style={{
-          backgroundImage: `url('https://lifelikelocals.tempurl.host/wp-content/uploads/2021/09/Banner.jpg')`,
+          backgroundImage: `url('/images/Banner.jpg')`,
         }}
       >
         <div className="container-custom hero-content text-center mx-auto">

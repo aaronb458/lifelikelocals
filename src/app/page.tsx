@@ -8,7 +8,7 @@ export default function Home() {
       <section
         className="relative min-h-[70vh] flex items-center justify-center pt-[65px]"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1920&q=80')`,
+          backgroundImage: `url('/images/Banner.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -58,72 +58,61 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Right Column - Woman's EYES + decorative elements */}
+            {/* Right Column - Decorative elements */}
             <div className="lg:col-span-2 relative min-h-[450px] hidden lg:block">
-              {/* Woman's EYES - cropped to show just eyes/upper face */}
-              <div className="absolute top-8 right-0 w-[320px] h-[180px] overflow-hidden rounded-xl shadow-lg">
+              {/* Orange Slice - top left */}
+              <div className="absolute top-0 left-0 w-[120px]">
                 <Image
-                  src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80"
-                  alt="Bahamian woman eyes"
-                  fill
-                  className="object-cover"
-                  style={{ objectPosition: 'center 22%' }}
-                  unoptimized
+                  src="/images/orange-slice.png"
+                  alt="Orange slice"
+                  width={364}
+                  height={447}
+                  className="w-full h-auto drop-shadow-lg"
                 />
               </div>
 
-              {/* LARGE Watermelon slice - bottom right */}
-              <div className="absolute bottom-0 right-0 w-[150px] h-[150px]">
-                <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-lg">
-                  <path d="M5 85 Q50 -10 95 85 Z" fill="#2d5a27"/>
-                  <path d="M10 80 Q50 0 90 80 Z" fill="#e8f5e9"/>
-                  <path d="M15 75 Q50 10 85 75 Z" fill="#ef5350"/>
-                  <ellipse cx="35" cy="50" rx="4" ry="6" fill="#333" transform="rotate(-20 35 50)"/>
-                  <ellipse cx="50" cy="45" rx="4" ry="6" fill="#333" transform="rotate(5 50 45)"/>
-                  <ellipse cx="65" cy="50" rx="4" ry="6" fill="#333" transform="rotate(20 65 50)"/>
-                  <ellipse cx="42" cy="62" rx="3" ry="5" fill="#333" transform="rotate(-10 42 62)"/>
-                  <ellipse cx="58" cy="62" rx="3" ry="5" fill="#333" transform="rotate(10 58 62)"/>
-                </svg>
+              {/* Purple Drink - top right */}
+              <div className="absolute top-0 right-0 w-[100px]">
+                <Image
+                  src="/images/Purple-drink-1.png"
+                  alt="Purple drink"
+                  width={251}
+                  height={521}
+                  className="w-full h-auto drop-shadow-lg"
+                />
               </div>
 
-              {/* LARGE Starfish - left side */}
-              <div className="absolute bottom-20 -left-4 w-[130px] h-[130px]">
-                <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-lg">
-                  <polygon points="50,5 61,35 95,35 68,57 79,90 50,70 21,90 32,57 5,35 39,35" fill="#F97068"/>
-                  <circle cx="50" cy="45" r="3" fill="#E85F57"/>
-                  <circle cx="40" cy="50" r="2" fill="#E85F57"/>
-                  <circle cx="60" cy="50" r="2" fill="#E85F57"/>
-                </svg>
+              {/* Hat - middle */}
+              <div className="absolute top-[100px] left-[80px] w-[120px]">
+                <Image
+                  src="/images/hat1.png"
+                  alt="Bahamian hat"
+                  width={297}
+                  height={710}
+                  className="w-full h-auto drop-shadow-lg"
+                />
               </div>
 
-              {/* Orange slice - top left */}
-              <div className="absolute top-0 left-4 w-[110px] h-[110px]">
-                <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-md">
-                  <circle cx="50" cy="50" r="45" fill="#ff9800"/>
-                  <circle cx="50" cy="50" r="38" fill="#ffb74d"/>
-                  <path d="M50 12 L50 88" stroke="#ff9800" strokeWidth="2"/>
-                  <path d="M12 50 L88 50" stroke="#ff9800" strokeWidth="2"/>
-                  <path d="M22 22 L78 78" stroke="#ff9800" strokeWidth="2"/>
-                  <path d="M78 22 L22 78" stroke="#ff9800" strokeWidth="2"/>
-                  <circle cx="50" cy="50" r="8" fill="#fff3e0"/>
-                </svg>
+              {/* Starfish - bottom left */}
+              <div className="absolute bottom-0 left-0 w-[110px]">
+                <Image
+                  src="/images/Starfish.png"
+                  alt="Starfish"
+                  width={277}
+                  height={475}
+                  className="w-full h-auto drop-shadow-lg"
+                />
               </div>
 
-              {/* Tropical leaf - behind */}
-              <div className="absolute top-[-10px] right-[-20px] w-[90px] h-[140px] -z-10 rotate-[25deg]">
-                <svg viewBox="0 0 60 100" className="w-full h-full">
-                  <path d="M30 0 Q60 30 50 50 Q60 70 30 100 Q0 70 10 50 Q0 30 30 0" fill="#4caf50" opacity="0.8"/>
-                  <path d="M30 10 L30 90" stroke="#388e3c" strokeWidth="2" opacity="0.5"/>
-                </svg>
-              </div>
-
-              {/* Small lime */}
-              <div className="absolute top-[200px] left-[60px] w-[70px] h-[70px]">
-                <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-md">
-                  <circle cx="50" cy="50" r="42" fill="#8bc34a"/>
-                  <circle cx="50" cy="50" r="32" fill="#aed581"/>
-                  <circle cx="50" cy="50" r="6" fill="#689f38"/>
-                </svg>
+              {/* Watermelon - bottom right */}
+              <div className="absolute bottom-0 right-[20px] w-[80px]">
+                <Image
+                  src="/images/Watermelon.png"
+                  alt="Watermelon slice"
+                  width={168}
+                  height={391}
+                  className="w-full h-auto drop-shadow-lg"
+                />
               </div>
             </div>
           </div>
@@ -154,13 +143,13 @@ export default function Home() {
       <section
         className="h-[50vh] md:h-[60vh] w-full"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=1920&q=80')`,
+          backgroundImage: `url('/images/Banner-4.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       />
 
-      {/* ========== SECTION 5: Why Choose Us (TEXT ONLY) ========== */}
+      {/* ========== SECTION 5: Why Choose Us ========== */}
       <section className="py-20 px-4 bg-white" id="what-is-we-do">
         <div className="max-w-3xl mx-auto">
           <h2 className="section-title text-3xl mb-2 text-center">Why Choose Us?</h2>
@@ -192,7 +181,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== SECTION 6: What To Expect (8 circular photos with TEXT ON TOP) ========== */}
+      {/* ========== SECTION 6: What To Expect (8 circular images) ========== */}
       <section className="py-20 px-4 bg-[#f9f9f9]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
@@ -202,27 +191,24 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {[
-              { label: "Creative Tourism", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&q=80" },
-              { label: "Local Gastronomy", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=300&q=80" },
-              { label: "Discovery Of Culture", img: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=300&q=80" },
-              { label: "History & Mystery", img: "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=300&q=80" },
-              { label: "Tru tru Bahamian Dialect", img: "https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=300&q=80" },
-              { label: "Immersive Activities", img: "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=300&q=80" },
-              { label: "Education Made Fun", img: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=300&q=80" },
-              { label: "Real real Bahamian life", img: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=300&q=80" },
+              { label: "Creative Tourism", img: "/images/What-to-expect-1.png" },
+              { label: "Local Gastronomy", img: "/images/What-to-expect-2.png" },
+              { label: "Discovery Of Culture", img: "/images/What-to-expect-3.png" },
+              { label: "History & Mystery", img: "/images/What-to-expect-4.png" },
+              { label: "Tru tru Bahamian Dialect", img: "/images/What-to-expect-5.png" },
+              { label: "Immersive Activities", img: "/images/What-to-expect-6.png" },
+              { label: "Education Made Fun", img: "/images/What-to-expect-7.png" },
+              { label: "Real real Bahamian life", img: "/images/What-to-expect-8.png" },
             ].map((item, idx) => (
               <div key={idx} className="flex flex-col items-center">
-                {/* Circular image with text overlay ON TOP */}
-                <div className="expect-item w-28 h-28 md:w-36 md:h-36 shadow-lg">
+                <div className="w-28 h-28 md:w-36 md:h-36 relative">
                   <Image
                     src={item.img}
                     alt={item.label}
-                    fill
-                    className="expect-item-image rounded-full"
-                    unoptimized
+                    width={260}
+                    height={233}
+                    className="w-full h-full object-contain drop-shadow-lg"
                   />
-                  <div className="expect-item-overlay" />
-                  <span className="expect-item-label">{item.label}</span>
                 </div>
               </div>
             ))}
@@ -242,12 +228,11 @@ export default function Home() {
             <div className="text-center">
               <div className="w-full h-48 rounded-lg overflow-hidden mb-5 shadow-md">
                 <Image
-                  src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80"
+                  src="/images/Whats-included-1-1-1.png"
                   alt="Food and Drink Tastings"
-                  width={400}
-                  height={300}
+                  width={345}
+                  height={285}
                   className="w-full h-full object-cover"
-                  unoptimized
                 />
               </div>
               <h4 className="item-title text-lg mb-3">Food and Drink Tastings</h4>
@@ -261,12 +246,11 @@ export default function Home() {
             <div className="text-center">
               <div className="w-full h-48 rounded-lg overflow-hidden mb-5 shadow-md">
                 <Image
-                  src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&q=80"
+                  src="/images/Whats-included-2.png"
                   alt="In-house Tours"
-                  width={400}
-                  height={300}
+                  width={345}
+                  height={285}
                   className="w-full h-full object-cover"
-                  unoptimized
                 />
               </div>
               <h4 className="item-title text-lg mb-3">In-house Tours</h4>
@@ -280,12 +264,11 @@ export default function Home() {
             <div className="text-center">
               <div className="w-full h-48 rounded-lg overflow-hidden mb-5 shadow-md">
                 <Image
-                  src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&q=80"
+                  src="/images/Whats-included-3.png"
                   alt="Endless Add-Ons"
-                  width={400}
-                  height={300}
+                  width={345}
+                  height={285}
                   className="w-full h-full object-cover"
-                  unoptimized
                 />
               </div>
               <h4 className="item-title text-lg mb-3">Endless Add-Ons</h4>
