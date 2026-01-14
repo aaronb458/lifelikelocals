@@ -3,6 +3,10 @@ import Image from "next/image";
 import WaveDivider from "@/components/WaveDivider";
 import FadeInSection from "@/components/FadeInSection";
 import Bubbles from "@/components/Bubbles";
+import Testimonials from "@/components/Testimonials";
+import PhotoGallery from "@/components/PhotoGallery";
+import AnimatedStats from "@/components/AnimatedStats";
+import MagneticButton from "@/components/MagneticButton";
 
 export default function Home() {
   return (
@@ -48,12 +52,12 @@ export default function Home() {
           </FadeInSection>
           <FadeInSection delay={0.4}>
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
-              <Link href="/tours-and-prices" className="btn-primary">
+              <MagneticButton href="/tours-and-prices" className="btn-primary">
                 Learn More
-              </Link>
-              <Link href="/contact" className="btn-outline-white glass-card-dark">
+              </MagneticButton>
+              <MagneticButton href="/contact" className="btn-outline-white glass-card-dark">
                 Contact Us
-              </Link>
+              </MagneticButton>
             </div>
           </FadeInSection>
         </div>
@@ -201,12 +205,12 @@ export default function Home() {
           </FadeInSection>
           <FadeInSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
-              <Link href="/tours-and-prices" className="btn-outline-white glass-card-dark">
+              <MagneticButton href="/tours-and-prices" className="btn-outline-white glass-card-dark">
                 See Tours
-              </Link>
-              <Link href="/contact" className="btn-outline-white glass-card-dark">
+              </MagneticButton>
+              <MagneticButton href="/contact" className="btn-outline-white glass-card-dark">
                 Contact Us
-              </Link>
+              </MagneticButton>
             </div>
           </FadeInSection>
         </div>
@@ -442,10 +446,64 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ========== SECTION 8: Animated Statistics ========== */}
+      <section className="py-24 px-4 bg-gradient-to-br from-[#40E0D0] via-[#48D1CC] to-[#20B2AA] relative overflow-hidden">
+        <Bubbles count={15} color="rgba(255, 255, 255, 0.2)" />
+        <div className="max-w-5xl mx-auto relative z-10">
+          <FadeInSection>
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-josefin)', textShadow: '2px 2px 8px rgba(0,0,0,0.2)' }}>
+                Our Island Impact
+              </h2>
+              <p className="text-white/90 text-xl italic">&quot;See why travelers love us&quot;</p>
+            </div>
+          </FadeInSection>
+          <FadeInSection delay={0.2}>
+            <AnimatedStats />
+          </FadeInSection>
+        </div>
+      </section>
+
+      {/* Animated wave transition */}
+      <WaveDivider color="#FFF8DC" flip animated />
+
+      {/* ========== SECTION 9: Photo Gallery ========== */}
+      <section className="py-28 px-4 bg-[#FFF8DC]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <FadeInSection>
+              <h2 className="section-title mb-4">Island Memories</h2>
+              <p className="subtitle-script">&quot;Captured moments from our adventures&quot;</p>
+            </FadeInSection>
+          </div>
+          <FadeInSection delay={0.2}>
+            <PhotoGallery />
+          </FadeInSection>
+        </div>
+      </section>
+
+      {/* Animated wave transition to testimonials */}
+      <WaveDivider color="#FFFAF5" animated />
+
+      {/* ========== SECTION 10: Testimonials ========== */}
+      <section className="py-28 px-4 bg-[#FFFAF5] relative overflow-hidden">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <FadeInSection>
+              <h2 className="section-title mb-4">What Travelers Say</h2>
+              <p className="subtitle-script">&quot;Hear from our island family&quot;</p>
+            </FadeInSection>
+          </div>
+          <FadeInSection delay={0.2}>
+            <Testimonials />
+          </FadeInSection>
+        </div>
+      </section>
+
       {/* Animated wave transition to coral */}
       <WaveDivider color="#F97068" animated />
 
-      {/* ========== SECTION 8: Final CTA with Bubbles ========== */}
+      {/* ========== SECTION 11: Final CTA with Bubbles ========== */}
       <section className="coral-section py-24 px-4 relative overflow-hidden">
         <Bubbles count={10} color="rgba(255, 255, 255, 0.15)" />
 
@@ -455,12 +513,12 @@ export default function Home() {
           </FadeInSection>
           <FadeInSection delay={0.2}>
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
-              <Link href="/tours-and-prices" className="btn-outline-white glass-card-dark">
+              <MagneticButton href="/tours-and-prices" className="btn-outline-white glass-card-dark">
                 Learn More
-              </Link>
-              <Link href="/contact" className="btn-outline-white glass-card-dark">
+              </MagneticButton>
+              <MagneticButton href="/contact" className="btn-outline-white glass-card-dark">
                 Contact Us
-              </Link>
+              </MagneticButton>
             </div>
           </FadeInSection>
         </div>
