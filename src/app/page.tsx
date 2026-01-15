@@ -72,7 +72,7 @@ export default function Home() {
             backgroundImage: `url('/images/gallery/VIC00148.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            opacity: 0.03,
+            opacity: 0.07,
           }}
         />
         <div className="max-w-6xl mx-auto relative z-10">
@@ -241,7 +241,7 @@ export default function Home() {
           style={{
             backgroundImage: `url('/images/gallery/VIC00788.jpg')`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center 40%',
+            backgroundPosition: 'center 70%',
             borderRadius: '30px',
             maxWidth: '92%',
             marginLeft: 'auto',
@@ -260,7 +260,7 @@ export default function Home() {
             backgroundImage: `url('/images/gallery/VIC00843.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            opacity: 0.04,
+            opacity: 0.08,
           }}
         />
         {/* THE MORPHING TEAL BLOB */}
@@ -397,7 +397,7 @@ export default function Home() {
             backgroundImage: `url('/images/gallery/VIC00519.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            opacity: 0.03,
+            opacity: 0.07,
           }}
         />
         <div className="max-w-5xl mx-auto relative z-10">
@@ -529,7 +529,7 @@ export default function Home() {
             backgroundImage: `url('/images/gallery/VIC09850.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            opacity: 0.04,
+            opacity: 0.07,
           }}
         />
         <div className="max-w-5xl mx-auto relative z-10">

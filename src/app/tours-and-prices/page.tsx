@@ -154,7 +154,7 @@ export default function ToursAndPrices() {
             backgroundImage: `url('/images/gallery/VIC00788.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            opacity: 0.03,
+            opacity: 0.07,
           }}
         />
         <div className="container-custom relative z-10">
@@ -254,7 +254,7 @@ export default function ToursAndPrices() {
             backgroundImage: `url('/images/gallery/VIC00129.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            opacity: 0.03,
+            opacity: 0.07,
           }}
         />
         <div className="container-custom relative z-10">

@@ -14,8 +14,8 @@ export default function Contact() {
       <section
         className="hero-section pt-20"
         style={{
-          backgroundImage: `url('/images/gallery/VIC00807.jpg')`,
-          backgroundPosition: 'center 25%',
+          backgroundImage: `url('/images/gallery/VIC00931.jpg')`,
+          backgroundPosition: 'center 60%',
           minHeight: "400px",
         }}
       >
@@ -37,7 +37,7 @@ export default function Contact() {
             backgroundImage: `url('/images/gallery/VIC00931.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            opacity: 0.03,
+            opacity: 0.07,
           }}
         />
         <div className="container-custom relative z-10">

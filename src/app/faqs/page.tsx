@@ -166,7 +166,8 @@ export default function FAQs() {
       <section
         className="hero-section pt-20"
         style={{
-          backgroundImage: `url('/images/Banner-2.jpg')`,
+          backgroundImage: `url('/images/gallery/VIC00519.jpg')`,
+          backgroundPosition: 'center 50%',
           minHeight: "400px",
         }}
       >
