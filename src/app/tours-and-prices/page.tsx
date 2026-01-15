@@ -14,17 +14,16 @@ export default function ToursAndPrices() {
       <section
         className="hero-section pt-20"
         style={{
-          backgroundImage: `url('/images/new/IMG_9774.jpeg')`,
-          backgroundPosition: 'center 40%',
+          backgroundImage: `url('/images/gallery/VIC00843.jpg')`,
+          backgroundPosition: 'center 50%',
           minHeight: "400px",
         }}
       >
         <div className="container-custom hero-content">
           <h1 className="text-white mb-4">Tours & Prices</h1>
           <p className="text-white/90 text-xl max-w-2xl">
-            Choose from our carefully crafted experiences designed to show you
-            the real Bahamas. All tours are led by passionate native Bahamian
-            guides.
+            Hop on our 24-seater bus and let us roll you through Nassau the local way.
+            All tours are led by passionate native Bahamian guides who were born here, live here, and know all the stories.
           </p>
         </div>
       </section>
@@ -36,7 +35,7 @@ export default function ToursAndPrices() {
             <div
               className="min-h-[400px] rounded-lg bg-cover bg-center shadow-2xl"
               style={{
-                backgroundImage: `url('/images/new/3.jpeg')`,
+                backgroundImage: `url('/images/gallery/VIC09911.jpg')`,
                 backgroundPosition: 'center 30%',
               }}
             />
@@ -163,7 +162,7 @@ export default function ToursAndPrices() {
               <div
                 className="card-image"
                 style={{
-                  backgroundImage: `url('/images/new/IMG_3120.jpeg')`,
+                  backgroundImage: `url('/images/gallery/VIC00532.jpg')`,
                   backgroundPosition: 'center 40%',
                 }}
               />
@@ -196,39 +195,38 @@ export default function ToursAndPrices() {
               </div>
             </div>
 
-            {/* Walking Tour */}
+            {/* Private Group Tours */}
             <div className="card">
               <div
                 className="card-image"
                 style={{
-                  backgroundImage: `url('/images/new/IMG_0043.jpeg')`,
-                  backgroundPosition: 'center 60%',
+                  backgroundImage: `url('/images/gallery/VIC00519.jpg')`,
+                  backgroundPosition: 'center 40%',
                 }}
               />
               <div className="card-content">
                 <span className="inline-block bg-[#f7941d] text-white text-sm px-3 py-1 rounded mb-4 uppercase tracking-wider">
-                  Add-On Tour
+                  Private Experience
                 </span>
-                <h3 className="text-[#333] mb-4">Walking Tour</h3>
+                <h3 className="text-[#333] mb-4">Private Group Tours</h3>
                 <p className="text-[#666] mb-6">
-                  A 45-minute guided walk through a historic area near our home
-                  base. Discover significant island landmarks, hear stories about
-                  Nassau&apos;s rich history, and explore hidden gems only locals
-                  know about.
+                  Want the whole bus to yourself? Perfect for families, corporate
+                  groups, or celebrations. We customize the tour to your interests,
+                  timing, and special requests. Your group, your vibe, our expertise.
                 </p>
                 <ul className="feature-list mb-6">
-                  <li>Small group experience</li>
-                  <li>Historic site visits</li>
-                  <li>Local culture insights</li>
-                  <li>Hidden gems exploration</li>
-                  <li>Photo opportunities</li>
+                  <li>Exclusive bus for your group</li>
+                  <li>Customized itinerary</li>
+                  <li>Flexible timing</li>
+                  <li>Special occasion packages</li>
+                  <li>Corporate team building</li>
                 </ul>
                 <div className="flex items-center justify-between">
                   <div className="price-tag">
-                    $30 <small>/person</small>
+                    Contact <small>for quote</small>
                   </div>
                   <Link href="/contact" className="btn-primary">
-                    Book Now
+                    Get Quote
                   </Link>
                 </div>
               </div>
@@ -315,8 +313,8 @@ export default function ToursAndPrices() {
       <section
         className="hero-section hero-light section-padding parallax"
         style={{
-          backgroundImage: `url('/images/new/IMG_1637.jpeg')`,
-          backgroundPosition: 'center 30%',
+          backgroundImage: `url('/images/gallery/VIC00649.jpg')`,
+          backgroundPosition: 'center 50%',
         }}
       >
         <div className="container-custom hero-content text-center mx-auto">

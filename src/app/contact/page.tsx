@@ -14,8 +14,8 @@ export default function Contact() {
       <section
         className="hero-section pt-20"
         style={{
-          backgroundImage: `url('/images/new/c268fa37-9749-46ef-bc46-14e61711cd0f.jpg')`,
-          backgroundPosition: 'center 30%',
+          backgroundImage: `url('/images/gallery/VIC01090.jpg')`,
+          backgroundPosition: 'center 40%',
           minHeight: "400px",
         }}
       >

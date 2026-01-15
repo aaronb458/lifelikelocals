@@ -25,12 +25,12 @@ export default function Home() {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `url('/images/new/IMG_3120.jpeg')`,
+            backgroundImage: `url('/images/gallery/VIC00148.jpg')`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center 30%',
+            backgroundPosition: 'center 35%',
             borderRadius: '0 0 50px 50px',
             mixBlendMode: 'overlay',
-            opacity: 0.7,
+            opacity: 0.75,
           }}
         />
 
@@ -91,16 +91,16 @@ export default function Home() {
 
             {/* Right Column - HUGE decorative elements */}
             <div className="relative min-h-[550px] hidden lg:block">
-              {/* Group photo - prominent, with 3D tilt */}
+              {/* Guide with Follow Me sign - prominent, with 3D tilt */}
               <FadeInSection delay={0.2} direction="right">
-                <div className="absolute top-0 right-0 w-[380px] h-[280px] overflow-hidden rounded-3xl shadow-2xl tilt-3d color-shift">
+                <div className="absolute top-0 right-0 w-[380px] h-[320px] overflow-hidden rounded-3xl shadow-2xl tilt-3d color-shift">
                   <Image
-                    src="/images/new/1.jpeg"
-                    alt="Group of travelers on tour"
+                    src="/images/gallery/VIC00736.jpg"
+                    alt="Your island guide"
                     width={800}
                     height={600}
                     className="w-full h-full object-cover"
-                    style={{ objectPosition: 'center 20%', borderRadius: '24px' }}
+                    style={{ objectPosition: 'center 15%', borderRadius: '24px' }}
                   />
                 </div>
               </FadeInSection>
@@ -219,14 +219,14 @@ export default function Home() {
       {/* Animated wave transition from coral */}
       <WaveDivider color="#FFFAF5" flip animated />
 
-      {/* ========== SECTION 4: Full-Bleed Nassau Photo - OVERLAPS ========== */}
+      {/* ========== SECTION 4: Full-Bleed Group Photo - OVERLAPS ========== */}
       <FadeInSection>
         <section
           className="h-[55vh] md:h-[65vh] w-full overlap-bottom color-shift"
           style={{
-            backgroundImage: `url('/images/new/IMG_0043.jpeg')`,
+            backgroundImage: `url('/images/gallery/VIC00788.jpg')`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center 60%',
+            backgroundPosition: 'center 40%',
             borderRadius: '30px',
             maxWidth: '92%',
             marginLeft: 'auto',
@@ -379,12 +379,12 @@ export default function Home() {
               <div className="text-center">
                 <div className="image-zoom w-full h-64 mb-8 tilt-left color-shift overflow-hidden" style={{ borderRadius: '24px', boxShadow: '0 15px 50px rgba(0,0,0,0.15)' }}>
                   <Image
-                    src="/images/new/IMG_0059.jpeg"
+                    src="/images/gallery/VIC00406.jpg"
                     alt="Food and Drink Tastings"
                     width={600}
                     height={400}
                     className="w-full h-full object-cover"
-                    style={{ borderRadius: '24px', objectPosition: 'center 30%' }}
+                    style={{ borderRadius: '24px' }}
                   />
                 </div>
                 <h4 className="item-title mb-4">Food and Drink Tastings</h4>
@@ -401,7 +401,7 @@ export default function Home() {
               <div className="text-center">
                 <div className="image-zoom w-full h-64 mb-8 tilt-right color-shift overflow-hidden" style={{ borderRadius: '24px', boxShadow: '0 15px 50px rgba(0,0,0,0.15)' }}>
                   <Image
-                    src="/images/new/IMG_9774.jpeg"
+                    src="/images/gallery/VIC09911.jpg"
                     alt="In-house Tours"
                     width={600}
                     height={400}
@@ -423,22 +423,22 @@ export default function Home() {
               <div className="text-center">
                 <div className="image-zoom w-full h-64 mb-8 tilt-slight color-shift overflow-hidden" style={{ borderRadius: '24px', boxShadow: '0 15px 50px rgba(0,0,0,0.15)' }}>
                   <Image
-                    src="/images/new/IMG_3147.jpeg"
-                    alt="Endless Add-Ons"
+                    src="/images/gallery/VIC00769.jpg"
+                    alt="Cultural Experiences"
                     width={600}
                     height={400}
                     className="w-full h-full object-cover"
                     style={{ borderRadius: '24px' }}
                   />
                 </div>
-                <h4 className="item-title mb-4">Endless Add-Ons</h4>
+                <h4 className="item-title mb-4">Cultural Experiences</h4>
                 <p className="text-[#7A6B5A] text-base leading-relaxed mb-4">
-                  For those of you that need that extra, we have a slew of add-on tours
-                  that add to the adventure. We can customize your tour, your stops and
-                  of course, we can arrange private tours.
+                  From Junkanoo drums to local storytelling, immerse yourself in authentic
+                  Bahamian culture. We can customize your tour, your stops and
+                  of course, we can arrange private group tours.
                 </p>
                 <Link href="/tours-and-prices" className="text-[#40E0D0] hover:text-[#F97068] text-base font-bold transition-colors">
-                  View Add-ons →
+                  View Tours →
                 </Link>
               </div>
             </FadeInSection>
