@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions | Life Like Locals",
-  description: "Read our terms and conditions for booking tours with Life Like Locals in Nassau, Bahamas.",
+  title: "Terms and Conditions",
+  description: "Read our terms and conditions for booking tours with Life Like Locals in Nassau, Bahamas. Important information about bookings, refunds, and tour conduct.",
+  openGraph: {
+    title: "Terms and Conditions | Life Like Locals",
+    description: "Terms and conditions for booking Life Like Locals tours in Nassau.",
+    images: ["/images/gallery/VIC00788.jpg"],
+  },
 };
 
 export default function TermsAndConditions() {

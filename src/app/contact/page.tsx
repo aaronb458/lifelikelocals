@@ -2,9 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Life Like Locals",
-  description:
-    "Get in touch with Life Like Locals for tour bookings, questions, or custom experiences in Nassau, Bahamas.",
+  title: "Contact Us",
+  description: "Get in touch with Life Like Locals for tour bookings, questions, or custom experiences in Nassau, Bahamas. Email, call, or WhatsApp us today!",
+  openGraph: {
+    title: "Contact Us | Life Like Locals",
+    description: "Book your authentic Bahamian tour today! Reach us by email, phone, or WhatsApp.",
+    images: ["/images/gallery/VIC00788.jpg"],
+  },
 };
 
 export default function Contact() {

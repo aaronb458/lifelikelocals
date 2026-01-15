@@ -26,8 +26,48 @@ const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Life Like Locals | Experience Life Like Locals",
-  description: "Authentic Bahamian experiences led by native guides. Explore Nassau with cultural tours, traditional cuisine, and down-home stories.",
+  title: {
+    default: "Life Like Locals | Authentic Bahamian Tours in Nassau",
+    template: "%s | Life Like Locals",
+  },
+  description: "Experience the real Bahamas with native guides. Cultural tours, traditional cuisine, and down-home stories in Nassau. Book your authentic island adventure today!",
+  keywords: ["Bahamas tours", "Nassau tours", "Bahamian culture", "local guides", "Caribbean travel", "authentic experiences", "cultural tours", "Nassau excursions"],
+  authors: [{ name: "Life Like Locals" }],
+  creator: "Life Like Locals",
+  metadataBase: new URL("https://lifelikelocals.com"),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://lifelikelocals.com",
+    siteName: "Life Like Locals",
+    title: "Life Like Locals | Authentic Bahamian Tours in Nassau",
+    description: "Experience the real Bahamas with native guides. Cultural tours, traditional cuisine, and down-home stories. Book your authentic island adventure!",
+    images: [
+      {
+        url: "/images/gallery/VIC00788.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Life Like Locals - Authentic Bahamian Tour Experience",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Life Like Locals | Authentic Bahamian Tours",
+    description: "Experience the real Bahamas with native guides. Cultural tours, traditional cuisine, and down-home stories in Nassau.",
+    images: ["/images/gallery/VIC00788.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({

@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Policies | Life Like Locals",
-  description: "Review our cancellation, refund, and privacy policies for Life Like Locals tours in Nassau, Bahamas.",
+  title: "Policies",
+  description: "Review our cancellation, refund, and privacy policies for Life Like Locals tours in Nassau, Bahamas. Full refunds available 14+ days before your tour.",
+  openGraph: {
+    title: "Policies | Life Like Locals",
+    description: "Cancellation, refund, and privacy policies for Life Like Locals tours.",
+    images: ["/images/gallery/VIC00788.jpg"],
+  },
 };
 
 export default function Policies() {

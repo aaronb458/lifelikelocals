@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "COVID-19 Guidelines | Life Like Locals",
-  description: "Learn about our COVID-19 safety measures and guidelines for Life Like Locals tours in Nassau, Bahamas.",
+  title: "COVID-19 Guidelines",
+  description: "No COVID restrictions required for Life Like Locals tours as of October 2022. Learn about our continued safety measures in Nassau, Bahamas.",
+  openGraph: {
+    title: "COVID-19 Guidelines | Life Like Locals",
+    description: "No COVID restrictions required. Learn about our safety measures for tours.",
+    images: ["/images/gallery/VIC00788.jpg"],
+  },
 };
 
 export default function CovidGuidelines() {

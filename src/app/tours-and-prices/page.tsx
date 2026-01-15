@@ -2,9 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tours and Prices | Life Like Locals",
-  description:
-    "Explore our authentic Bahamian tours including Cultural Experience Tour, Bus Tour, and Walking Tour. Book your Nassau adventure today.",
+  title: "Tours and Prices",
+  description: "Explore our authentic Bahamian tours including the Cultural Experience Tour with lunch, Bus Tours, and Private Group experiences. Starting at $50 per person in Nassau.",
+  openGraph: {
+    title: "Tours and Prices | Life Like Locals",
+    description: "Authentic Bahamian tours starting at $50. Cultural experiences, local cuisine, and native guides in Nassau.",
+    images: ["/images/gallery/VIC09911.jpg"],
+  },
 };
 
 export default function ToursAndPrices() {
