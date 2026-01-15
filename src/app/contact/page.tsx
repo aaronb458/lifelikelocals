@@ -178,11 +178,11 @@ export default function Contact() {
                     <h4 className="text-[#333] font-semibold text-lg mb-0">Email</h4>
                     <a
                       href="mailto:lifelikelocals@gmail.com"
-                      className="text-[#40E0D0] hover:text-[#F97068] font-medium transition-colors"
+                      className="text-[#0D9488] hover:text-[#F97068] font-semibold transition-colors"
                     >
                       lifelikelocals@gmail.com
                     </a>
-                    <p className="text-[#999] text-sm">
+                    <p className="text-[#777] text-sm">
                       We respond within 24 hours
                     </p>
                   </div>
@@ -209,11 +209,11 @@ export default function Contact() {
                     <h4 className="text-[#333] font-semibold text-lg mb-0">Phone / WhatsApp</h4>
                     <a
                       href="tel:242-815-8687"
-                      className="text-[#40E0D0] hover:text-[#F97068] font-medium transition-colors"
+                      className="text-[#0D9488] hover:text-[#F97068] font-semibold transition-colors"
                     >
                       242-815-8687
                     </a>
-                    <p className="text-[#999] text-sm">
+                    <p className="text-[#777] text-sm">
                       Tour line - call or WhatsApp
                     </p>
                   </div>
@@ -277,7 +277,7 @@ export default function Contact() {
                         href="https://facebook.com/lifelikelocals"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#40E0D0] hover:text-[#F97068] font-medium transition-colors"
+                        className="text-[#0D9488] hover:text-[#F97068] font-semibold transition-colors"
                       >
                         Facebook
                       </a>
@@ -285,7 +285,7 @@ export default function Contact() {
                         href="https://instagram.com/lifelikelocalsbahamas"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#40E0D0] hover:text-[#F97068] font-medium transition-colors"
+                        className="text-[#0D9488] hover:text-[#F97068] font-semibold transition-colors"
                       >
                         Instagram
                       </a>

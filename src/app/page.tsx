@@ -98,7 +98,7 @@ export default function Home() {
                   And we gon&apos; tell them to you just how we tell each other –
                   <span className="text-[#F97068]"> loud, funny, full of love, and always real.</span>
                 </p>
-                <p className="text-[#40E0D0] text-xl font-bold italic" style={{ fontFamily: 'var(--font-josefin)' }}>
+                <p className="text-[#0D9488] text-xl font-bold italic" style={{ fontFamily: 'var(--font-josefin)' }}>
                   &quot;This ain&apos;t no lie, you ain&apos;t go neva meet people like us, fa tru!&quot;
                 </p>
               </div>
@@ -472,7 +472,7 @@ export default function Home() {
                   Bahamian culture. We can customize your tour, your stops and
                   of course, we can arrange private group tours.
                 </p>
-                <Link href="/tours-and-prices" className="text-[#40E0D0] hover:text-[#F97068] text-base font-bold transition-colors">
+                <Link href="/tours-and-prices" className="text-[#0D9488] hover:text-[#F97068] text-base font-bold transition-colors">
                   View Tours →
                 </Link>
               </div>
