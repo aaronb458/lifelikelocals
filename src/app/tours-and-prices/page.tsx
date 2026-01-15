@@ -146,8 +146,18 @@ export default function ToursAndPrices() {
       </section>
 
       {/* Add-On Tours */}
-      <section className="section-padding section-light">
-        <div className="container-custom">
+      <section className="section-padding section-light relative overflow-hidden">
+        {/* Subtle background image for vibrancy */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url('/images/gallery/VIC00788.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.03,
+          }}
+        />
+        <div className="container-custom relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-[#333] mb-4">Add-On Tours</h2>
             <div className="divider divider-center"></div>
@@ -236,8 +246,18 @@ export default function ToursAndPrices() {
       </section>
 
       {/* Booking Info */}
-      <section className="section-padding">
-        <div className="container-custom">
+      <section className="section-padding relative overflow-hidden">
+        {/* Subtle background image for vibrancy */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url('/images/gallery/VIC00129.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.03,
+          }}
+        />
+        <div className="container-custom relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-[#333] mb-4">Booking Information</h2>
             <div className="divider divider-center"></div>
@@ -311,22 +331,35 @@ export default function ToursAndPrices() {
 
       {/* CTA */}
       <section
-        className="hero-section hero-light section-padding parallax"
+        className="relative py-24 px-4 overflow-hidden"
         style={{
-          backgroundImage: `url('/images/gallery/VIC00649.jpg')`,
-          backgroundPosition: 'center 50%',
+          background: 'linear-gradient(135deg, #40E0D0 0%, #48D1CC 50%, #F97068 100%)',
         }}
       >
-        <div className="container-custom hero-content text-center mx-auto">
-          <h2 className="text-white text-4xl mb-4">Ready to Book?</h2>
-          <p className="text-white/90 text-xl max-w-2xl mx-auto mb-8">
+        {/* Background image with overlay */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url('/images/gallery/VIC09850.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.3,
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#40E0D0]/80 to-[#F97068]/80 z-0" />
+
+        <div className="container-custom text-center mx-auto relative z-10">
+          <h2 className="text-white text-4xl md:text-5xl font-bold mb-4" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.3)' }}>
+            Ready to Book Your Tour?
+          </h2>
+          <p className="text-white text-xl max-w-2xl mx-auto mb-8" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.3)' }}>
             Contact us to reserve your spot on an authentic Bahamian adventure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-secondary">
+            <Link href="/contact" className="bg-white text-[#40E0D0] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#F97068] hover:text-white transition-all shadow-lg">
               Contact Us
             </Link>
-            <Link href="/faqs" className="btn-white">
+            <Link href="/faqs" className="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-[#40E0D0] transition-all">
               View FAQs
             </Link>
           </div>

@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 import CustomCursor from "@/components/CustomCursor";
 import PageLoader from "@/components/PageLoader";
-import AmbientSound from "@/components/AmbientSound";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -46,7 +45,6 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
         </SmoothScroll>
-        <AmbientSound />
       </body>
     </html>
   );

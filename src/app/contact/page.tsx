@@ -14,8 +14,8 @@ export default function Contact() {
       <section
         className="hero-section pt-20"
         style={{
-          backgroundImage: `url('/images/gallery/VIC01090.jpg')`,
-          backgroundPosition: 'center 40%',
+          backgroundImage: `url('/images/gallery/VIC00807.jpg')`,
+          backgroundPosition: 'center 25%',
           minHeight: "400px",
         }}
       >
@@ -29,8 +29,18 @@ export default function Contact() {
       </section>
 
       {/* Contact Content */}
-      <section className="section-padding">
-        <div className="container-custom">
+      <section className="section-padding relative overflow-hidden">
+        {/* Subtle background image for vibrancy */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url('/images/gallery/VIC00931.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.03,
+          }}
+        />
+        <div className="container-custom relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
@@ -146,12 +156,12 @@ export default function Contact() {
               <h2 className="text-[#333] mb-2">Get in Touch</h2>
               <div className="divider mb-8"></div>
 
-              <div className="space-y-8">
+              <div className="space-y-6">
                 {/* Email */}
-                <div className="flex items-start gap-4">
-                  <div className="blurb-icon w-14 h-14 flex-shrink-0">
+                <div className="flex items-center gap-5">
+                  <div className="w-14 h-14 flex-shrink-0 bg-[#F97068] rounded-full flex items-center justify-center shadow-md">
                     <svg
-                      className="w-6 h-6"
+                      className="w-6 h-6 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -165,24 +175,24 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-[#333] mb-1">Email</h4>
+                    <h4 className="text-[#333] font-semibold text-lg mb-0">Email</h4>
                     <a
                       href="mailto:lifelikelocals@gmail.com"
-                      className="text-[#2ea3f2] hover:underline"
+                      className="text-[#40E0D0] hover:text-[#F97068] font-medium transition-colors"
                     >
                       lifelikelocals@gmail.com
                     </a>
-                    <p className="text-[#999] text-sm mt-1">
+                    <p className="text-[#999] text-sm">
                       We respond within 24 hours
                     </p>
                   </div>
                 </div>
 
                 {/* Phone */}
-                <div className="flex items-start gap-4">
-                  <div className="blurb-icon w-14 h-14 flex-shrink-0">
+                <div className="flex items-center gap-5">
+                  <div className="w-14 h-14 flex-shrink-0 bg-[#F97068] rounded-full flex items-center justify-center shadow-md">
                     <svg
-                      className="w-6 h-6"
+                      className="w-6 h-6 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -196,24 +206,24 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-[#333] mb-1">Phone / WhatsApp</h4>
+                    <h4 className="text-[#333] font-semibold text-lg mb-0">Phone / WhatsApp</h4>
                     <a
                       href="tel:242-815-8687"
-                      className="text-[#2ea3f2] hover:underline"
+                      className="text-[#40E0D0] hover:text-[#F97068] font-medium transition-colors"
                     >
                       242-815-8687
                     </a>
-                    <p className="text-[#999] text-sm mt-1">
+                    <p className="text-[#999] text-sm">
                       Tour line - call or WhatsApp
                     </p>
                   </div>
                 </div>
 
                 {/* Address */}
-                <div className="flex items-start gap-4">
-                  <div className="blurb-icon w-14 h-14 flex-shrink-0">
+                <div className="flex items-center gap-5">
+                  <div className="w-14 h-14 flex-shrink-0 bg-[#F97068] rounded-full flex items-center justify-center shadow-md">
                     <svg
-                      className="w-6 h-6"
+                      className="w-6 h-6 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -233,20 +243,21 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-[#333] mb-1">Mailing Address</h4>
+                    <h4 className="text-[#333] font-semibold text-lg mb-0">Mailing Address</h4>
                     <p className="text-[#666]">
                       P.O. Box SS-19731
-                      <br />
+                    </p>
+                    <p className="text-[#666]">
                       Nassau, Bahamas
                     </p>
                   </div>
                 </div>
 
                 {/* Social Media */}
-                <div className="flex items-start gap-4">
-                  <div className="blurb-icon w-14 h-14 flex-shrink-0">
+                <div className="flex items-center gap-5">
+                  <div className="w-14 h-14 flex-shrink-0 bg-[#F97068] rounded-full flex items-center justify-center shadow-md">
                     <svg
-                      className="w-6 h-6"
+                      className="w-6 h-6 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -260,13 +271,13 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-[#333] mb-1">Social Media</h4>
+                    <h4 className="text-[#333] font-semibold text-lg mb-1">Social Media</h4>
                     <div className="flex gap-4">
                       <a
                         href="https://facebook.com/lifelikelocals"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#2ea3f2] hover:underline"
+                        className="text-[#40E0D0] hover:text-[#F97068] font-medium transition-colors"
                       >
                         Facebook
                       </a>
@@ -274,7 +285,7 @@ export default function Contact() {
                         href="https://instagram.com/lifelikelocalsbahamas"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#2ea3f2] hover:underline"
+                        className="text-[#40E0D0] hover:text-[#F97068] font-medium transition-colors"
                       >
                         Instagram
                       </a>

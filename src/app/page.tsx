@@ -65,26 +65,41 @@ export default function Home() {
 
       {/* ========== SECTION 2: Introduction - ASYMMETRIC with HUGE decorations ========== */}
       <section className="py-28 px-4 bg-[#FFFAF5] relative overflow-hidden">
-        <div className="max-w-6xl mx-auto">
+        {/* Subtle background image for vibrancy */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url('/images/gallery/VIC00148.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.03,
+          }}
+        />
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left Column - Text */}
             <FadeInSection direction="left">
               <div className="lg:pr-8">
+                <h3 className="text-2xl font-bold text-[#F97068] mb-4" style={{ fontFamily: 'var(--font-josefin)' }}>
+                  About the Experience
+                </h3>
                 <p className="text-[#5D4E37] text-lg leading-relaxed mb-6">
-                  Life Like Locals is the curation of an indigenous collection of original and
-                  unique events that induct you into the &quot;real world of the locals&quot;,
-                  introducing our way of life, from the food, to the dances, to the heart and
-                  spirit of The Bahamas. Our goal is to give you an experience that you will
-                  never forget. &quot;This ain&apos;t no lie, you ain&apos;t go neva meet people like us, fa tru!&quot;
+                  Hop on our 24-seater bus and let us roll you through Nassau the local way.
+                  For 3½ hours, you&apos;ll see where we hang out, hear the kinda stories your hotel
+                  guide won&apos;t tell you, and learn exactly how we does talk.
                 </p>
                 <p className="text-[#5D4E37] text-lg leading-relaxed mb-6">
-                  We invite you to feel our vibrant character, learn our accent, embrace our
-                  lingo, share in the flavor of our food, and experience the unity of
-                  traditional and contemporary, and most importantly, become a part of it!
-                  Don&apos;t be a &quot;typical tourist&quot;, live a little and enjoy life.
+                  We hittin&apos; historical sites, neighborhood corners, and them picture-perfect
+                  spots you&apos;d only find if you had cousin, aunty, or somebody baby daddy to show you &apos;round.
                 </p>
-                <p className="text-[#5D4E37] text-lg font-bold">
-                  What are you waiting for?
+                <p className="text-[#5D4E37] text-lg leading-relaxed mb-6 font-medium">
+                  We born here. We live here. We know the stories.
+                  <br />
+                  And we gon&apos; tell them to you just how we tell each other –
+                  <span className="text-[#F97068]"> loud, funny, full of love, and always real.</span>
+                </p>
+                <p className="text-[#40E0D0] text-xl font-bold italic" style={{ fontFamily: 'var(--font-josefin)' }}>
+                  &quot;This ain&apos;t no lie, you ain&apos;t go neva meet people like us, fa tru!&quot;
                 </p>
               </div>
             </FadeInSection>
@@ -238,6 +253,16 @@ export default function Home() {
 
       {/* ========== SECTION 5: Why Choose Us - WITH MORPHING TEAL BLOB ========== */}
       <section className="py-32 px-4 bg-[#FFFAF5] relative overflow-hidden" id="what-is-we-do">
+        {/* Subtle background image for vibrancy */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url('/images/gallery/VIC00843.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.04,
+          }}
+        />
         {/* THE MORPHING TEAL BLOB */}
         <div
           className="teal-blob hidden lg:block"
@@ -327,20 +352,20 @@ export default function Home() {
           <div className="text-center mb-16">
             <FadeInSection>
               <h2 className="section-title mb-4">What To Expect</h2>
-              <p className="subtitle-script">&quot;Unique Experiences Unlocked&quot;</p>
+              <p className="subtitle-script">&quot;See what we do. Eat what we eat. Talk how we talk.&quot;</p>
             </FadeInSection>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 justify-items-center">
             {[
-              { label: "Creative Tourism", img: "/images/What-to-expect-1.png" },
-              { label: "Local Gastronomy", img: "/images/What-to-expect-2.png" },
-              { label: "Discovery Of Culture", img: "/images/What-to-expect-3.png" },
-              { label: "History & Mystery", img: "/images/What-to-expect-4.png" },
-              { label: "Tru tru Bahamian Dialect", img: "/images/What-to-expect-5.png" },
-              { label: "Immersive Activities", img: "/images/What-to-expect-6.png" },
-              { label: "Education Made Fun", img: "/images/What-to-expect-7.png" },
-              { label: "Real real Bahamian life", img: "/images/What-to-expect-8.png" },
+              { label: "Plenty Laughing", img: "/images/gallery/VIC00931.jpg" },
+              { label: "Local Gastronomy", img: "/images/gallery/VIC00322-Edit.jpg" },
+              { label: "Real Storytelling", img: "/images/gallery/VIC00991.jpg" },
+              { label: "History & Mystery", img: "/images/gallery/VIC00788.jpg" },
+              { label: "Local Slang", img: "/images/gallery/VIC00736.jpg" },
+              { label: "Picture-Perfect Spots", img: "/images/gallery/VIC00129.jpg" },
+              { label: "Hidden Gems", img: "/images/gallery/VIC01123.jpg" },
+              { label: "Real Bahamian Life", img: "/images/gallery/VIC01206.jpg" },
             ].map((item, idx) => (
               <FadeInSection key={idx} delay={idx * 0.1}>
                 <div className="flex flex-col items-center">
@@ -364,8 +389,18 @@ export default function Home() {
       </section>
 
       {/* ========== SECTION 7: What's Included - DRAMATICALLY TILTED ========== */}
-      <section className="py-28 px-4 bg-[#FFFAF5]">
-        <div className="max-w-5xl mx-auto">
+      <section className="py-28 px-4 bg-[#FFFAF5] relative overflow-hidden">
+        {/* Subtle background image for vibrancy */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url('/images/gallery/VIC00519.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.03,
+          }}
+        />
+        <div className="max-w-5xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <FadeInSection>
               <h2 className="section-title mb-4">What&apos;s Included</h2>
@@ -487,7 +522,17 @@ export default function Home() {
 
       {/* ========== SECTION 10: Testimonials ========== */}
       <section className="py-28 px-4 bg-[#FFFAF5] relative overflow-hidden">
-        <div className="max-w-5xl mx-auto">
+        {/* Subtle background image for vibrancy */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url('/images/gallery/VIC09850.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.04,
+          }}
+        />
+        <div className="max-w-5xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <FadeInSection>
               <h2 className="section-title mb-4">What Travelers Say</h2>
