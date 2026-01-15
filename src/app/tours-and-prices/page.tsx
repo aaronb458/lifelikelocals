@@ -14,7 +14,8 @@ export default function ToursAndPrices() {
       <section
         className="hero-section pt-20"
         style={{
-          backgroundImage: `url('/images/Banner-3.jpg')`,
+          backgroundImage: `url('/images/new/IMG_9774.jpeg')`,
+          backgroundPosition: 'center 40%',
           minHeight: "400px",
         }}
       >
@@ -35,7 +36,8 @@ export default function ToursAndPrices() {
             <div
               className="min-h-[400px] rounded-lg bg-cover bg-center shadow-2xl"
               style={{
-                backgroundImage: `url('/images/Product-1.jpg')`,
+                backgroundImage: `url('/images/new/3.jpeg')`,
+                backgroundPosition: 'center 30%',
               }}
             />
             <div>
@@ -161,7 +163,8 @@ export default function ToursAndPrices() {
               <div
                 className="card-image"
                 style={{
-                  backgroundImage: `url('/images/Product-2.jpg')`,
+                  backgroundImage: `url('/images/new/IMG_3120.jpeg')`,
+                  backgroundPosition: 'center 40%',
                 }}
               />
               <div className="card-content">
@@ -198,7 +201,8 @@ export default function ToursAndPrices() {
               <div
                 className="card-image"
                 style={{
-                  backgroundImage: `url('/images/Product-3.jpg')`,
+                  backgroundImage: `url('/images/new/IMG_0043.jpeg')`,
+                  backgroundPosition: 'center 60%',
                 }}
               />
               <div className="card-content">
@@ -311,7 +315,8 @@ export default function ToursAndPrices() {
       <section
         className="hero-section hero-light section-padding parallax"
         style={{
-          backgroundImage: `url('/images/Banner-4.jpg')`,
+          backgroundImage: `url('/images/new/IMG_1637.jpeg')`,
+          backgroundPosition: 'center 30%',
         }}
       >
         <div className="container-custom hero-content text-center mx-auto">

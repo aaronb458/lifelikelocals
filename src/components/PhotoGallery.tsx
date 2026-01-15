@@ -4,15 +4,19 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 const galleryImages = [
-  { src: '/images/What-to-expect-1.png', alt: 'Creative Tourism', category: 'culture' },
-  { src: '/images/What-to-expect-2.png', alt: 'Local Gastronomy', category: 'food' },
-  { src: '/images/What-to-expect-3.png', alt: 'Discovery Of Culture', category: 'culture' },
-  { src: '/images/What-to-expect-4.png', alt: 'History & Mystery', category: 'culture' },
-  { src: '/images/Whats-included-1-1-1.png', alt: 'Food Tasting', category: 'food' },
-  { src: '/images/Whats-included-2.png', alt: 'Local Tours', category: 'tours' },
-  { src: '/images/Whats-included-3.png', alt: 'Add-On Experiences', category: 'tours' },
-  { src: '/images/What-to-expect-5.png', alt: 'Bahamian Dialect', category: 'culture' },
-  { src: '/images/What-to-expect-6.png', alt: 'Immersive Activities', category: 'tours' },
+  { src: '/images/new/1.jpeg', alt: 'Tour Group Fun', category: 'tours' },
+  { src: '/images/new/3.jpeg', alt: 'Guided Experience', category: 'tours' },
+  { src: '/images/new/IMG_0043.jpeg', alt: 'Nassau Landmarks', category: 'culture' },
+  { src: '/images/new/IMG_0059.jpeg', alt: 'Local Drinks', category: 'food' },
+  { src: '/images/new/IMG_1637.jpeg', alt: 'Family Adventures', category: 'tours' },
+  { src: '/images/new/IMG_3120.jpeg', alt: 'Life Like Locals Bus', category: 'tours' },
+  { src: '/images/new/IMG_3147.jpeg', alt: 'Junkanoo Culture', category: 'culture' },
+  { src: '/images/new/IMG_8206.jpeg', alt: 'Colonial Architecture', category: 'culture' },
+  { src: '/images/new/IMG_8526.jpeg', alt: 'Beach Day', category: 'tours' },
+  { src: '/images/new/IMG_8900.jpeg', alt: 'Crystal Waters', category: 'tours' },
+  { src: '/images/new/IMG_9677.jpeg', alt: 'Making Memories', category: 'tours' },
+  { src: '/images/new/IMG_9774.jpeg', alt: 'Tour Bus Fun', category: 'tours' },
+  { src: '/images/new/c268fa37-9749-46ef-bc46-14e61711cd0f.jpg', alt: 'Happy Travelers', category: 'tours' },
 ];
 
 export default function PhotoGallery() {

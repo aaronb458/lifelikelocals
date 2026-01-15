@@ -25,12 +25,12 @@ export default function Home() {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `url('/images/Banner.png')`,
+            backgroundImage: `url('/images/new/IMG_3120.jpeg')`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'center 30%',
             borderRadius: '0 0 50px 50px',
             mixBlendMode: 'overlay',
-            opacity: 0.6,
+            opacity: 0.7,
           }}
         />
 
@@ -91,16 +91,16 @@ export default function Home() {
 
             {/* Right Column - HUGE decorative elements */}
             <div className="relative min-h-[550px] hidden lg:block">
-              {/* Woman's EYES - prominent, with 3D tilt */}
+              {/* Group photo - prominent, with 3D tilt */}
               <FadeInSection delay={0.2} direction="right">
-                <div className="absolute top-0 right-0 w-[380px] h-[170px] overflow-hidden rounded-3xl shadow-2xl tilt-3d color-shift">
+                <div className="absolute top-0 right-0 w-[380px] h-[280px] overflow-hidden rounded-3xl shadow-2xl tilt-3d color-shift">
                   <Image
-                    src="/images/why-choose-us.png"
-                    alt="Bahamian woman eyes"
-                    width={1440}
-                    height={615}
+                    src="/images/new/1.jpeg"
+                    alt="Group of travelers on tour"
+                    width={800}
+                    height={600}
                     className="w-full h-full object-cover"
-                    style={{ objectPosition: 'center 30%', borderRadius: '24px' }}
+                    style={{ objectPosition: 'center 20%', borderRadius: '24px' }}
                   />
                 </div>
               </FadeInSection>
@@ -219,14 +219,14 @@ export default function Home() {
       {/* Animated wave transition from coral */}
       <WaveDivider color="#FFFAF5" flip animated />
 
-      {/* ========== SECTION 4: Full-Bleed Underwater Photo - OVERLAPS ========== */}
+      {/* ========== SECTION 4: Full-Bleed Nassau Photo - OVERLAPS ========== */}
       <FadeInSection>
         <section
           className="h-[55vh] md:h-[65vh] w-full overlap-bottom color-shift"
           style={{
-            backgroundImage: `url('/images/Banner-2-2.jpg')`,
+            backgroundImage: `url('/images/new/IMG_0043.jpeg')`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'center 60%',
             borderRadius: '30px',
             maxWidth: '92%',
             marginLeft: 'auto',
@@ -377,14 +377,14 @@ export default function Home() {
             {/* Card 1 - TILTED LEFT */}
             <FadeInSection delay={0}>
               <div className="text-center">
-                <div className="image-zoom w-full h-64 mb-8 tilt-left color-shift" style={{ borderRadius: '24px', boxShadow: '0 15px 50px rgba(0,0,0,0.15)' }}>
+                <div className="image-zoom w-full h-64 mb-8 tilt-left color-shift overflow-hidden" style={{ borderRadius: '24px', boxShadow: '0 15px 50px rgba(0,0,0,0.15)' }}>
                   <Image
-                    src="/images/Whats-included-1-1-1.png"
+                    src="/images/new/IMG_0059.jpeg"
                     alt="Food and Drink Tastings"
-                    width={345}
-                    height={285}
+                    width={600}
+                    height={400}
                     className="w-full h-full object-cover"
-                    style={{ borderRadius: '24px' }}
+                    style={{ borderRadius: '24px', objectPosition: 'center 30%' }}
                   />
                 </div>
                 <h4 className="item-title mb-4">Food and Drink Tastings</h4>
@@ -399,12 +399,12 @@ export default function Home() {
             {/* Card 2 - TILTED RIGHT */}
             <FadeInSection delay={0.15}>
               <div className="text-center">
-                <div className="image-zoom w-full h-64 mb-8 tilt-right color-shift" style={{ borderRadius: '24px', boxShadow: '0 15px 50px rgba(0,0,0,0.15)' }}>
+                <div className="image-zoom w-full h-64 mb-8 tilt-right color-shift overflow-hidden" style={{ borderRadius: '24px', boxShadow: '0 15px 50px rgba(0,0,0,0.15)' }}>
                   <Image
-                    src="/images/Whats-included-2.png"
+                    src="/images/new/IMG_9774.jpeg"
                     alt="In-house Tours"
-                    width={345}
-                    height={285}
+                    width={600}
+                    height={400}
                     className="w-full h-full object-cover"
                     style={{ borderRadius: '24px' }}
                   />
@@ -421,12 +421,12 @@ export default function Home() {
             {/* Card 3 - SLIGHT TILT */}
             <FadeInSection delay={0.3}>
               <div className="text-center">
-                <div className="image-zoom w-full h-64 mb-8 tilt-slight color-shift" style={{ borderRadius: '24px', boxShadow: '0 15px 50px rgba(0,0,0,0.15)' }}>
+                <div className="image-zoom w-full h-64 mb-8 tilt-slight color-shift overflow-hidden" style={{ borderRadius: '24px', boxShadow: '0 15px 50px rgba(0,0,0,0.15)' }}>
                   <Image
-                    src="/images/Whats-included-3.png"
+                    src="/images/new/IMG_3147.jpeg"
                     alt="Endless Add-Ons"
-                    width={345}
-                    height={285}
+                    width={600}
+                    height={400}
                     className="w-full h-full object-cover"
                     style={{ borderRadius: '24px' }}
                   />
