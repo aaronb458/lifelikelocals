@@ -246,19 +246,36 @@ export default function FAQs() {
 
       {/* CTA */}
       <section
-        className="hero-section hero-light section-padding parallax"
+        className="relative py-24 px-4 overflow-hidden"
         style={{
-          backgroundImage: `url('/images/Banner.jpg')`,
+          background: 'linear-gradient(135deg, #40E0D0 0%, #48D1CC 50%, #F97068 100%)',
+          borderRadius: '0 0 40px 40px',
         }}
       >
-        <div className="container-custom hero-content text-center mx-auto">
-          <h2 className="text-white text-4xl mb-4">Ready to Book Your Tour?</h2>
-          <p className="text-white/90 text-xl max-w-2xl mx-auto mb-8">
+        {/* Background image with overlay */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url('/images/gallery/VIC09850.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.3,
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#40E0D0]/80 to-[#F97068]/80 z-0" />
+
+        <div className="container-custom text-center mx-auto relative z-10">
+          <h2 className="text-white text-4xl md:text-5xl font-bold mb-4" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.3)' }}>
+            Ready to Book Your Tour?
+          </h2>
+          <p className="text-white text-xl max-w-2xl mx-auto mb-8" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.3)' }}>
             Experience authentic Bahamian culture with our native guides.
           </p>
-          <Link href="/tours-and-prices" className="btn-secondary">
-            View Tours & Prices
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/tours-and-prices" className="bg-white text-[#40E0D0] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#F97068] hover:text-white transition-all shadow-lg">
+              View Tours & Prices
+            </Link>
+          </div>
         </div>
       </section>
     </>
